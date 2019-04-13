@@ -1,0 +1,15 @@
+body {
+	font-size: 12pt;
+	}
+
+#nav, #theme, #sidebar {
+	display: none;
+	}
+	
+a:link, a:visited {
+	color: blue;
+	}	
+
+#content .entry p a:link:after, #content .entry p a:visited:after {
+	content: " (" attr(href) ") ";
+	}

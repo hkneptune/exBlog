@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="{langlanguage}" />
+<title>{artTitle}=={title}</title>
+<link href="{templatesURL}/style/print.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="{exPATH}/include/ex1.js"></script>
+</head>
+
+<body dir="{langdir}">
+<div id="location"><a href="{exPATH}/index.php">{lang0}</a> > {artTitle} > {lang95}</div>
+<!--主内容区begin-->
+<div id="main">
+<h1>{artTitle}</h1>
+<div id="info">{lang71}{author} | {lang72}{sort} | {lang96}{time} | {lang97}{visits} | <a href="{url_reply}">{lang98}</a></div>
+<p>{artContent}</p>
+<div id="tool">
+<input name="button" type=button class="botton" onclick=window.print() value="{lang99}">&nbsp;&nbsp;
+<input name="button" type=button class="botton" onclick=window.close() value="{lang100}">
+</div>
+</div>
+<!--主内容区end-->
+
+<!-- 页脚信息begin -->
+<div id="footer">
+<div id="footer">
+<a href="http://www.exBlog.net/"><img alt="{lang57}" src="{templatesURL}/images/icon_power.png" /></a><br />
+
+{copyright}<br />
+<a href="mailto:support@exblog.net">{lang60}</a> - <a href="http://www.exblog.net">{lang61}</a><br />
+</div>
+<!-- 页脚信息end -->
+</div>
+<!-- 内容区end -->
+
+</body>
+</html>

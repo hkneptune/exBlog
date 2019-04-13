@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{langlanguage}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="{langlanguage}" />
+<meta name="generator" content="http://www.exBlog.net/" />
+<meta content="all" name="robots" />
+<!-- 站长信息 -->
+<meta name="author" content="{Webmastername} {Webmaster}" />
+<!-- 站点版权 -->
+<meta name="Copyright" content="exBlog" />
+<!-- 站点关键词 -->
+<meta name="keywords" content="{blogKeyword},{sitekeyword}" />
+<!-- 站点简介 -->
+<meta name="description" content="{sitedescription}" />
+<!-- 站点聚合 -->
+<link rel="alternate" type="application/rss+xml" href="{siteUrl}/rss2.php" title="{title}" />
+<link rel="alternate" type="application/rss+xml" href="{siteUrl}/atom.php" title="{title}" />
+<!-- 站点图标 -->
+<link rel="icon" href="{exPATH}/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{exPATH}/favicon.ico" type="image/x-icon" />
+<!-- 页面标题 -->
+<title>{currentSort} {title}</title>
+<!-- 外联样式表 -->
+<link rel="stylesheet" type="text/css" media="screen" href="{templatesURL}/css/styles.css"/>
+<link rel="stylesheet" type="text/css" media="print" href="{templatesURL}/css/print.css" />
+<link rel="alternate stylesheet" type="text/css" media="screen" href="{templatesURL}/css/blue.css" title="slate" />
+<link rel="alternate stylesheet" type="text/css" media="screen" href="{templatesURL}/css/lime.css" title="green" />
+<!-- 前台常用脚本 -->
+<script type="text/javascript" src="{exPATH}/include/ex1.js"></script>
+<script type="text/javascript" src="{templatesURL}/js/scripts.js"></script>
+</head>
+
+<body dir="{langdir}">
+
+	<div id="wrap">
+
+	<p id="theme">
+		<a href="#" onclick="setActiveStyleSheet('', 1);return false;" title="Switch to default theme" class="noline"><img src="{templatesURL}/img/switch_ora.gif" width="17" height="17" alt="Change to default theme" border="0" /></a><a href="#" onclick="setActiveStyleSheet('green', 1);return false;" title="Switch to green theme" class="noline"><img src="{templatesURL}/img/switch_grn.gif" width="17" height="17" alt="Change to classic theme" border="0" /></a><a href="#" onclick="setActiveStyleSheet('slate', 1);return false;" title="Switch to slate theme" class="noline"><img src="{templatesURL}/img/switch_slt.gif" width="17" height="17" alt="Change to slate theme" border="0" /></a>
+
+	</p>
+
+	<div id="logo">
+		<span><img src="/img/triplex_lofi.gif" width="118" height="29" alt="{title}" border="0"/></span>
+	</div>
+
+	<div id="top_qqq">
+		<img src="{templatesURL}/img/side_about.gif" alt="exBlog" />
+		<img src="{templatesURL}/img/side_cont.gif" alt="exBlog" />
+		<img src="{templatesURL}/img/side_note.gif" alt="exBlog" />
+		<img src="{templatesURL}/img/side_pub.gif" alt="exBlog" />
+		<img src="{templatesURL}/img/side_work.gif" alt="exBlog" />
+	</div>
+
+	<ul id="nav">
+		<li id="t-home"><a href="{exPATH}/index.php">{lang0}</a></li>
+		<li id="t-about"><a href="#" title="{lang5}">{lang4}</a></li>
+		<li id="t-pub"><a href="{url_links}" title="{lang7}">{lang6}</a></li>
+		<li id="t-cont"><a href="#" title="{lang9}">{lang8}</a></li>
+		<li id="t-note"><a href="{exPATH}/admin/login.php" target="_blank" title="{lang35}">{lang34}</a></li>
+		<li id="t-serv"><a href="http://www.exBlog.net/">exBlog</a></li>
+	</ul>
+
+
+<div id="main-body">
+
+<div id="content">
+
+{PutTopBlogs}
+{PutBlogs}
+{PutSortBlogs}
+{PutBlogKeywords_f}
+{PutBlogTrackbacks_f}
+{PutBlogComments_f}
+{PutCommentForm_f}
+{PutLinks2}
+{PutSearch}
+{PutRegLink}
+
+{PutPage}
+
+
+
+</div>
+
+<hr class="hide" />
+
+<div id="sidebar">
+
+<h3 id="sub-note">Category</h3>
+<ul>
+<li><a href="{exPATH}/index.php" class="selected">All</a></li>
+{PutColumn}
+<li><a href="#" title="{lang5}">{lang4}</a></li>
+<li><a href="#" title="{lang9}">{lang8}</a></li>
+<li><a href="{exPATH}/index.php?play=regLink">{lang54}</a></li>
+<li><a href="{exPATH}/admin/login.php" title="{lang35}">{lang34}</a></li>
+</ul>
+
+<h3 id="sub-note">Information</h3>
+<ul>
+<li>{lang26}{blogNum}</li>
+<li>{lang27}{reNum}</li>
+<li>{lang28}{tbNum}</li>
+<li>{lang29}{visNum}</li>
+<li>{lang30}{todNum}</li>
+<li>{lang31}{userNum}</li>
+<li>{lang32}{onlineUserNum}</li>
+</ul>
+
+<h3 id="sub-note">Search</h3>
+<form id="navigation" method="post" action="{exPATH}/index.php?play=search">
+<span class="searchform">
+<input name="keyword" type="text" onfocus="this.select()" onclick="this.value=''"  onmouseover="this.focus()" value="{lang37}" size="14" />
+<input type="submit" value="{lang38}" />
+</span>
+</form>
+
+	<h3 id="sub-note">Recent Notebook Entries</h3>
+	<ul>
+		{Putnewblog}
+	
+	</ul>
+	<h3 id="sub-note">Recent Comments</h3>
+	<ul>
+		{PutComment}
+	
+	</ul>
+	<h3 id="sub-note">Recent Trackbacks</h3>
+	<ul>
+		{PutTrackback}
+
+	</ul>
+
+<h3 id="sub-note">RSS</h3>
+<ul>
+<li><a href="{exPATH}/rss.php" target="_blank"><img src="{templatesURL}/img/rss10.png" alt="{lang43}" border="0" /></a>
+<a href="{exPATH}/rss2.php" target="_blank"><img src="{templatesURL}/img/rss20.png" alt="{lang44}" border="0" /></a></li>
+<li><a href="{exPATH}/atom.php" target="_blank"><img src="{templatesURL}/img/atom03.png" alt="{lang45}" border="0" /></a>
+<a href="javascript:window.external.AddChannel('http://www.madcn.com/madcn.cdf');" target="_blank"><img src="{templatesURL}/img/channel.png" alt="{lang46}" border="0" /></a></li>
+<li><a href="{exPATH}/rss2.php?comment=10" target="_blank"><img src="{templatesURL}/img/comment.png" alt="{lang47}" border="0" /></a>
+<a href="http://www.exBlog.net/" target="_blank"><img src="{templatesURL}/img/icon_power.png" alt="{lang48}" border="0" /></a></li>
+<li><a href="http://www.creativecommons.cn/licenses/by-sa/1.0/" target="_blank"><img src="{templatesURL}/img/cc.png" alt="{lang49}" border="0" /></a>
+<img src="{templatesURL}/img/gb2312.gif" alt="{lang50}GB2312" border="0" /></li>
+<li><a href="http://www.php.net/" target="_blank"><img src="{templatesURL}/img/php.png" alt="PHP" border="0"></a>
+<a href="http://www.mysql.com/" target="_blank"><img src="{templatesURL}/img/mysql.png" alt="MySQL" border="0"></a></li>
+</ul>
+
+	<h3 id="sub-note">Links</h3>
+	<ul>
+		{PutLinks}
+
+	</ul>
+
+</div>
+
+<hr class="hide" />
+
+<div id="footer">
+	<p>{copyright}<br />
+	<a href="http://validator.w3.org/check/referer" rel="external" target="_blank" title="Validates this page">XHTML</a>, 
+	<a href="http://jigsaw.w3.org/css-validator/validator?uri={siteUrl}" rel="external" target="_blank" title="Validates the CSS of this page">CSS</a>,
+	<a href="http://bobby.watchfire.com/bobby/bobbyServlet?URL={siteUrl}&amp;output=Submit&amp;gl=sec508" title="Check US Section 508 compliance">508</a>,
+	<a href="{siteUrl}/rss.php" title="RSS 1.0">RSS 1.0</a>,
+	<a href="{siteUrl}/rss2.php" title="RSS 2.0">RSS 2.0</a>,
+	<a href="{siteUrl}/atom.php" title="ATOM">ATOM</a>.
+	Powered by <a href="http://www.exBlog.net/">exBlog</a>
+	Template: SimpleBits</p>
+</div>
+
+</div> <!-- end #main-body -->
+</div> <!-- end #wrap -->
+
+</body>
+</html>

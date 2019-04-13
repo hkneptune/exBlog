@@ -1,0 +1,26 @@
+/* green theme */
+
+#logo {
+	background: #9c6 url(../img/green_top.gif) no-repeat right;
+	}
+#logo span {
+	background: url(../img/triplex_lime.gif) no-repeat;
+	}
+h1, h1 a, h2, code, #comments h3, #home h1 {
+	color: #666633;
+	}
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited {
+	text-decoration: none;
+	color: #666633;
+	}
+h1 a:hover, h2 a:hover {
+	color: #630;
+	}
+code strong {
+	color: #666633;
+	}
+#portthumbs a:hover img {
+	background: #7b4140;
+	}
+
+
