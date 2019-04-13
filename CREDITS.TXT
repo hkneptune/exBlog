@@ -1,0 +1,17 @@
+<?ExBlog Team
+ 
+ $程序制作        =     elliott    
+ $界面设计        =     Hunter     
+ $文档及BUG修复   =     Tomy       
+ $整体协调        =     Viva
+ $程序测试        =     流水流云
+
+ //---- 在此也感谢以下为 ExBlog 提供建议的朋友们 ----//
+
+ $skyshui  =  在早期版本中为 exblog 提供了很多建议.
+ $Viva     =  要为是没他天天催偶赶工, 1.2.0 也不知道要多久才能出来.
+ $all      =  感谢所有为 exblog 提供帮助过的朋友们.
+
+ //The End.  elliott design. [at] 2004-09-06 haha...
+
+?>

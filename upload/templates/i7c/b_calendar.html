@@ -1,0 +1,32 @@
+<!-- BEGIN RowCalendar -->
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+
+<table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td class="caltitle">{currentYearMonth}</td>
+  </tr>
+</table>
+<table width="180" border="0" align="center" cellpadding="4" cellspacing="1" bgcolor="#f6f6f6">
+  <tr align="center" bgcolor="#FDEAF0"> 
+    <td bgcolor="#f6f6f6"><span class="style1">日</span></td>
+    <td bgcolor="#f6f6f6">一</td>
+    <td bgcolor="#f6f6f6">二</td>
+    <td bgcolor="#f6f6f6">三</td>
+    <td bgcolor="#f6f6f6">四</td>
+    <td bgcolor="#f6f6f6">五</td>
+    <td bgcolor="#f6f6f6"><span class="style1">六</span></td>
+  </tr>
+  <tr align="center">
+	{today}
+  </tr>
+</table>
+<table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" class="calfooter"><A class="more" href="./index.php?play=calendar&year={curYear}&month={prev_month}"><img src="{templatesURL}/images/3.gif" alt="上月" width="10" height="10"></A> MONTH <A class="more" href="./index.php?play=calendar&year={curYear}&month={next_month}"><img src="{templatesURL}/images/4.gif" alt="下月" width="10" height="10"></A>　　<A class="more" href="./index.php?play=calendar&year={prev_year}&month={curMonth}"><img src="{templatesURL}/images/3.gif" alt="上一年" width="10" height="10"></A> YEAR <A class="more" href="./index.php?play=calendar&year={next_year}&month={curMonth}"><img src="{templatesURL}/images/4.gif" alt="下一年" width="10" height="10"></A></td>
+  </tr>
+</table>
+<!-- END RowCalendar -->
