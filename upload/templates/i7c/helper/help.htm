@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>exBlog 网络日志(PHP+MYSQL) 1.2.0 RC1 版</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.table1 {  border: #0099cc; border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.td1 {  background-color: #99ccff}
+.td2 {  background-color: #CAE4FF; font-weight: bold; border-color: #000000 black black; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+table {  font-size: 12px; line-height: 20px}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="600" border="0" align="center" cellspacing="0" cellpadding="4" class="table1">
+ <tr> 
+    <td class="td1" align="center" colspan="2"><b>exBlog 网络日志(PHP+MYSQL) 1.2.0 版 
+      使用说明</b></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li><a href="#1">功能介绍</a> 
+   <li><a href="#2">安装说明</a> 
+   <li><a href="#3">使用协议</a> 
+   <li><a href="#4">升级历史</a> 
+   <li><a href="#5">版权声明</a> 
+   <li><a href="#6">联系方法</a>
+  </td>
+ </tr>
+ <tr> 
+  <td height="19" class="td2">功能介绍<a name="1"></a></td>
+  <td height="19" class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"><p>+ 使用了模版(templates)技术，能让网站在瞬间改变样式；<br>
+        + 本程式副带2套模版(可自已制作模片，无须接触任何PHP代码)；<br>
+        + 用户分级管理，不同等级有不同管理权限；<br>
+        + 支持首页调用，能自由调用各栏目或所有栏目最新文章；<br>
+        + 支持公告，日历功能(能通过日历选择当前发表的BLOG记录)；<br>
+        + 支持用户论评功能，可对BLOG文章自由进行评论；<br>
+        + 添加&amp;删除&amp;编辑[BLOG,友情链接,公告,用户]；<br>
+        + 更多...<br>
+        <br>
+      </p>
+      </td>
+ </tr>
+ <tr> 
+  <td class="td2">安装说明<a name="2"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2">1. 系统要求<br>
+   　　===========================================<br>
+   　　正常使用该软件您必须保证您的<br>
+   　　服务器满足如下要求： <br>
+      　　1) 软件环境：Apache 1.3.X + PHP 4.2.0 及以上 <br>
+   　　2) 数 据 库：MySQL 3.23.X 及以上<br>
+   　　3) 其 他：服务器必须安装 微软IE浏览器4.0版本以上，推荐IE5.5+<br>
+      [本程序编写环境] <strong>EasyPHP 1.6.0.0</strong> ( 偶懒,没配置环境 ~!~ )<br>
+      <p>2. 系统安装<br>
+        　　===========================================<br>
+        　　1)在支持PHP的服务器上解开本软件包。<br>
+        　　2)将 ./upload 目录下所有文件上传至服务器。首页面地址是：index.php<br>
+        　　3)登录MySQL，建立一个新的数据库，命名任意，如 exblog。<br>
+        　　<font color="#0000FF">BTW:</font>如果你无权限建表,请在config.inc.php中添写ICP给的数据库名<br>
+        　　4)将 ./install/config.inc.php 中相关内容修改为您的信息。 <br>
+        　　<strong>注意：</strong>一定要将数据库的名称改为你刚才新建的名称，如上应为 exblog<br>
+        　　5)在IE地址栏运行 &lt;安装路径&gt;/admin/install.php 按提示进行建表，创建管理员等步骤。<br>
+        　　6)安装完成! 在IE地址栏运行 &lt;安装路径&gt;/admin/login.php 登录后台管理程式。 <br>
+        　　 <br>
+      </p>  </td>
+ </tr>
+ <tr> 
+  <td class="td2">使用协议<a name="3"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <p> 1、exBlog 为免费程序,你可以修改源代码但请保留版权信息.<br>
+个人网站可以免费使用本系统,并可自由传播,传播过程请保持本系统的完整性.<br>
+任何个人或企业未经许可不得将本系统用作商业用途.</p>
+   <p> 2、使用过程中为美化程序或修改BUG您可以对源代码进行修改,如要传播您的修改版本<br>
+  请保留原程序中的 exBlog 版权信息.<br>
+  <br>
+  3、您可以查看 exBlog 的源代码,但在没有获得作者正式许可的情况下,不能以除了<br>
+  美化界面、修改BUG以外的其他任何理由修改 exBlog 的源程序,更不能修改相关<br>
+  说明档和程序显示的版权信息. </p>
+   <p> 4、exBlog 是开放源代码软件,如果您对 exBlog 有好的想法和意见,并希望自己<br>
+  修改 exBlog 完善其功能时,必须与我们取得联系,在获得我们正式的许可后,<br>
+  在完整保留 exBlog 版权信息和说明档的前提下. 对 exBlog 进行修改. </p>
+   <p> 5、本程序欢迎转载,您可以在原样完整保留全部版权信息和说明档的前提下,传播和发布<br>
+  本程序,但将 exBlog 用于商业目的或违背上述条款的传播都是被禁止的. </p>
+   <p> 6、安装 exBlog 建立在完全同意本授权文档的基础之上,因此而产生的纠纷,违反授权<br>
+  协议的一方将承担全部责任.</p>
+      <p> 7、如您想获得技术支持,请EMAIL至<a href="mailto:exblog@fengling.net">exblog@fengling.net</a>进行完全免费的注册,注明网站URL<br>
+  在以后过程中如程序有BUG或升级将通过EMAIL通知您.<br>
+   </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">升级历史<a name="4"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+    <td colspan="2"><li>exBlog Ver: 1.1.0 Plus! 2004/03/30<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+        + 增加了对swf,ra,rm,wmv,wma,iframe的支持,可直接在页面显示<br>
+        + 修改了quote的显示<br>
+        + 修正了对大图片的显示,不再破坏整体布局<br>
+        + 管理菜单最下边增加了回首页<br>
+        + 启用三段式版本号<br>
+        + <font color="#FF0000">流水流云</font>加入exSoft开发小组<br>
+        <br>
+      <li>exBlog Ver: 1.1.0 2004/02/11<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+        + 捆绑了exbook留言本<br>
+        + 自动检查install安装文件安装完成后是否存在,以免造成安全漏洞.<br>
+        + 增加了公告功能<br>
+        + 增加日历功能<br>
+        + 增加了页面调用功能<br>
+        + 增加了一套 pink 模版<br>
+        + 后台编辑文章功能加强<br>
+        + 修改页面显示链接为随机显示</p> 
+      <p>
+      <li>exBlogMix Ver: 1.0.0 2004/02/01<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+        修改了前一个内测版本的全部BUG，修改了在不同分辨率下显示变形的错误。<br>
+        正式确定了所有代码和界面风格，为正式发布版本。<br>
+        <br>
+      <li>exBlogMix Ver: 0.0.1 2004/01/29<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+为啥加个mix呢?因为目终目标是个全站程序所以在后面加了个mix(混合)此版本中<br>
+修改了exBlog中的一些BUG,感谢朋友skyshui的测试,使用了PHPLIB的templates.<br>
+        <font color="#FF0000">hunter</font>加入团队，并确定设计了仿msn风格的页面. 
+        <p>
+      <li>exBlog Ver: 0.0.1 2003/12/25<br>
+        ^^^^^^^^^^^^^^^^^^^<br>
+  exBlog第一个版本,算是对自已还能继续读书的一个礼物吧.以前就有个想法写<br>
+  一个全站程序,由于种种原因一直没有完成.现在有时间了进入大一时间还算充裕<br>
+  所以诞生了这个exBlog. Enjoy it. ^__^ </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">版权声明<a name="5"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li>本软体为共享软体(shareware)提供个人网站免费使用，可以在使用中修改，但要保留动网版权信息； 　 
+   <li>转载，散播请勿删除版权声明；
+   <li>未经许可不得将本系统用于商业用途；
+   <li>如果可能，请在您的网站做上我们的链接，希望能给予合作。谢谢！ 
+  </td>
+ </tr>
+ <tr> 
+  <td class="td2">联系方法<a name="6"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <p>程序开发：<a href="mailto:elliott_he@126.com">elliott</a><br>
+     美工设计：<a href="mailto:hunt@emails.bjut.edu.cn">hunter</a><br>
+        网站地址：<a href="http://www.fengling.net/" target="_blank">http://www.fengling.net/</a><br>
+	</p>  </td>
+ </tr>
+</table>
+</body>
+</html>

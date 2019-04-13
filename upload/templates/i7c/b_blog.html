@@ -1,0 +1,46 @@
+<!-- BEGIN RowBlog -->
+
+<TABLE cellSpacing=0 cellPadding=0 width=100% align=center border=0>
+  <TBODY>
+    <TR>
+      <TD bgColor=#e6e6e6>
+        <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+          <TBODY>
+            <TR class=header> 
+              <TD width="57%"><strong>{isTop}<a href="./?play=reply&id={blogID}">{blogTitle}</a></strong></TD>
+              <TD width="43%">天气: <img src="{blogWeather}" align="absmiddle"> 
+                &nbsp;&nbsp;&nbsp;时间:{blogAddtime}</TD>
+            </TR>
+            <TR> 
+              <TD colspan="2" align=middle bgColor=#ffffff> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TBODY>
+                    <TR> 
+                      <TD class=smalltxt 
+                        align=middle onmouseover="this.style.backgroundColor='#F8F8F8'" 
+                      onmouseout="this.style.backgroundColor='#FFFFFF'"><div align="left"><br>
+                          {blogContent} <BR>
+                        </div></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE></TD>
+            </TR>
+            <TR> 
+              <TD colspan="2" align=middle bgColor=#ffffff> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                  <TBODY>
+                    <TR> 
+                      <TD class=smalltxt 
+                        align=middle ><div align="right">Posted by <a href="mailto:{blogEmail}" class="cn">{blogAuthor}</a> 
+                          in [{blogSort}] | <a href="./index.php?play=reply&id={blogID}" class="cn">评论：{blogVisits}</a> 
+                          | 共点击({viewNum})次 | <a href="./index.php?play=show&id={blogID}" target="_blank"class="cn">[阅读全文] 
+                          </a></div></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE></TD>
+            </TR>
+          </TBODY>
+        </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<br>
+<!-- END RowBlog -->

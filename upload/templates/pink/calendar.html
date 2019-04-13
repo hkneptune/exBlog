@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta Name="author" content="elliott,Hunter">
+<meta name="keywords" content="elliott,hunter,exBlog,blog,PHP,MySQL">
+<meta name="description" content="exBlog - Powered by elliott,Designed by Hunter">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<title>{currentSort}</title>
+<link href="{templatesURL}/style/styles.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="{templatesURL}/style/menu.js"></SCRIPT>
+</head>
+
+<body>
+<table width="100%"  border="0" cellpadding="0" cellspacing="4" bgcolor="#FF0066">
+  <tr>
+    <td width="380" class="header"><img src="{templatesURL}/images/spacer.gif" width="20" height="1">exBlog ver:1.2.0</td>
+    <td width="350" align="right"><a href="./admin/login.php" class=E>登录</a> <font color="#FFFFFF">|</font> <a href="./help.htm" class=E>帮助</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td height="1" colspan="2" class="border"><img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="20%" height="46" background="{templatesURL}/images/snow.jpg"><img src="{templatesURL}/images/icon_pink.gif" width="118" height="35"></td>
+  </tr>
+</table>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="menuborder">
+  <tr>
+    <td width="95" align="center" class="menu0" onMouseOver="MO()" onMouseOut="MU()"><a href="./?play" class="menu">首　页</a></td>
+	{PutColumn}
+    <td width="95" align="center" class="menu0" onMouseOver="MO()" onMouseOut="MU()"><a href="./?play=links" class="menu">友情链接</a></td>
+    <td><img src="{templatesURL}/images/spacer.gif" width="1" height="22"></td>
+  </tr>
+</table>
+<table width="748" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="270"><img src="{templatesURL}/images/spacer.gif" width="20" height="39"><img src="{templatesURL}/images/welcome.gif" width="250" height="29" alt=""></td><td width="478" valign="bottom">您的位置：<a href="./?play" class="cn">首页</a> > {currentSort}</td>
+  </tr>
+  <tr>
+    <td bgcolor="#FF0066"><img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td><td bgcolor="#FF0066"></td>
+  </tr>
+</table>
+<table width="748" height="258" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="200" valign="top" bgcolor="#FDEAF0"><img src="{templatesURL}/images/spacer.gif" width="200" height="10">{PutCalendar}<br><img src="{templatesURL}/images/spacer.gif" width="200" height="10">{PutCalendar}<br><table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+      <tr>
+        <td bgcolor="#FDFBCA" class="title1">Information</td>
+      </tr>
+      <tr>
+          <td class="content1"><table>
+              <tr> 
+                <td>共有Blog：{blogNum}</td>
+              </tr>
+              <tr> 
+                <td>共有评论：{reNum}</td>
+              </tr>
+              <tr> 
+                <td>共访问数：{visNum}</td>
+              </tr>
+              <tr> 
+                <td>今日访问: {todNum}</td>
+              </tr>
+			  <tr> 
+                <td>当前在线：{onlineUserNum}</td>
+              </tr>
+			  <tr>
+              <td>注册用户: {userNum}</td>
+              </tr>
+			  </table></td>
+      </tr>
+    </table>
+      <img src="{templatesURL}/images/spacer.gif" width="1" height="16">      <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+        <tr>
+          <td bgcolor="#F0FBF3" class="title1">New Comments</td>
+        </tr>
+        <tr>
+          <td class="content2"><table>{PutComment}</table></td>
+        </tr>
+      </table>	  
+	  <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+        <tr>
+            <td height="20" valign="middle" bgcolor="#EAF2FF" class="title1">友情链接</td>
+        </tr>
+        <tr>
+            <td class="content3"><table width="100%">
+							  <tr>
+							  <td>
+							  <MARQUEE onmouseover=this.stop() onmouseout=this.start() scrollAmount="2" scrolldelay="15" direction="up" height="150">
+      					  {PutLinks}
+							</MARQUEE>
+							</td> 
+							</tr>
+      </table>
+                              <div align="right"><a href="/?play=regLink">【申请站点链接】</a></div></td>
+                            </tr>
+      </table>
+	  <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　RSS 查看</td>
+                            </tr>
+                            <tr>
+                              
+                            <td height="30" align="center" class="content3"><a href="./rss.php"><img src="{templatesURL}/images/rss.png" alt="RSS View" border="0"></a></td>
+                            </tr>
+       </table>
+      <img src="{templatesURL}/images/spacer.gif" width="1" height="16">      <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+        <tr>
+          <td bgcolor="#EEEEEE" class="title1">Search</td>
+        </tr>
+        <tr>
+          <td class="content4"><form method="post" action="./?play=search"><input name="keyword" type="text" class="input" onfocus=this.select() onClick=this.value='' onmouseover=this.focus() value="请输入关键字" size="18"> 
+              <input name="action" type="submit" value="搜索" class="botton"></form></td>
+        </tr>
+      </table>
+    <img src="{templatesURL}/images/spacer.gif" width="1" height="16"> </td>
+    <td width="1" bgcolor="#CCCCCC"><img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+    <td valign="top"><img src="{templatesURL}/images/spacer.gif" width="544" height="10">
+        {PutBlog}
+      <table width="92%" border="0" align="center" cellpadding="10" cellspacing="0">
+        <tr>
+          <td class="blogother">第<font color="#FF0000">{curPage}</font>页,共<font color="#FF0000">{totalPage}</font>页 
+            <a href="./?play=calendar&year={curYear}&month={curMonth}" class="cn">首页</a> 
+            <a href="./?play=calendar&year={curYear}&month={curMonth}&page={prev_page}" class="cn">上页</a> 
+            <a href="./?play=calendar&year={curYear}&month={curMonth}&page={next_page}" class="cn">下页</a> 
+            <a href="./?play=calendar&year={curYear}&month={curMonth}&page={total_page}" class="cn">末页</a></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+    <TR>
+      <TD class=border><IMG height=1 alt="" src="{templatesURL}/images/spacer.gif" width=16></TD>
+      <TD class=border><IMG height=1 alt="" src="{templatesURL}/images/spacer.gif" width=1></TD>
+      <TD class=border><IMG alt="" src="{templatesURL}/images/spacer.gif"></TD>
+    </TR>
+    <TR>
+      <TD><IMG src="{templatesURL}/images/spacer.gif" alt="" height="30"></TD>
+      <TD width="65%" noWrap> <a href="mailto:exblog@126.com">联系我们</a> | 程序:<a class="copy" href="mailto:elliott_he@163.com">elliott</a> 
+        | 美工:<a href="http://hunter.cnyou.com" target="_blank" class="copy">hunter</a> 
+        <img src="{templatesURL}/images/spacer.gif" width="80" height="1">{copyright}</TD>
+      <TD width="22%" noWrap><SPAN style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial">Powered by <a href="http://exblog.fengling.net"><img src="{templatesURL}/images/icon_power.png" alt="本网站由 exBlog 构架" width="80" height="15" border="0" align="absmiddle"></a></span></TD>
+      <TD><IMG alt="" src="{templatesURL}/images/spacer.gif"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</body>
+</html>

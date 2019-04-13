@@ -1,0 +1,278 @@
+<HTML><HEAD><TITLE>{blogTitle}</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR>
+<META content=TRUE name=MSSmartTagsPreventParsing>
+<META http-equiv=MSThemeCompatible content=Yes>
+<link href="{templatesURL}/style/styles.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="{templatesURL}/style/common.js"></SCRIPT>
+</HEAD>
+<BODY leftMargin=0 topMargin=0 rightMargin=0>
+<TABLE width="750" border=0 align="center" cellPadding=0 cellSpacing=0 
+background="{templatesURL}/images/top_bg.gif">
+  <TBODY>
+    <TR>
+      <TD align=center width=147><A hideFocus 
+      href="./"><IMG alt="logo" src="{templatesURL}/images/logo.gif" border=0></A> </TD>
+      <TD align=right>
+        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <TBODY>
+            <TR align=right>
+              <TD height="38">　 <SPAN class=bold><A hideFocus 
+            href="./help.htm" title="关于exBlog..." target="content">关　　于</A></SPAN> | <SPAN class=bold><A hideFocus 
+            href="./admin/login.php" title="guest莫进">管　　理</A></SPAN>&nbsp;&nbsp;　</TD>
+            </TR>
+            <TR vAlign=center align=right>
+              <TD height=27><div align="left"><SPAN class=bold><a href="./index.php?play" title="回到首页">首　　页</a></SPAN> | <SPAN class=bold>{PutColumn}</SPAN> | <SPAN class=bold><A hideFocus 
+            href="./index.php?play=links" title="全是我的好朋友">友情链结</A></SPAN></div></TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<table width="750" height="13"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div align="center">
+        <MARQUEE onmouseover=this.stop(); 
+                              onmouseout=this.start(); scrollAmount=3>
+        {putAnnounce}</MARQUEE>
+    </div></td>
+  </tr>
+</table>
+<TABLE class=green2 cellSpacing=0 cellPadding=0 width="750" 
+            align=center border=0>
+  <TBODY>
+    <TR>
+      <TD>
+        <TABLE cellSpacing=0 cellPadding=4 width="750%" border=0>
+          <TBODY>
+            <TR class=category>
+              <TD height=18><font color="#FFFFFF">您的位置：<a href="./index.php?play" class="cn"><font color="#FFFFFF"><b>首　　页</b></font></a> >> <b> [{blogTitle}] >> 查看评论</b></span></font></TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+            bgColor=#dbdbdb border=0>
+              <TBODY>
+              <TR>
+<TD height=3></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+border=0>
+  <TBODY>
+    <TR>
+      <TD bgColor=#dbdbdb>
+        <TABLE style="TABLE-LAYOUT: fixed; WORD-WRAP: break-word" 
+                  cellSpacing=1 cellPadding=4 width="100%" border=0>
+          <TBODY>
+            <TR bgColor=#ffffff><A name=pid15412></A>
+                <TD vAlign=top width="200">
+                  <TABLE cellSpacing=0 cellPadding=5 width="95%" 
+                        align=center border=0>
+                    <TBODY>
+                      <TR>
+                        <TD>{PutCalendar}<br>
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　统计信息</td>
+                            </tr>
+                            <tr>
+                              <td class="content1"><div align="center"></div>                                <table align="left">
+                                  <tr>
+                                    <td>共有Blog：{blogNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>共有评论：{reNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>共访问数：{visNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>今日访问: {todNum}</td>
+                                  </tr>
+                              </table>
+                              <div align="center"></div></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　最新评论</td>
+                            </tr>
+                            <tr>
+                              <td class="content2"><table>
+        {PutComment}
+                              </table></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　友情链接</td>
+                            </tr>
+                            <tr>
+                              <td class="content3"><table>
+        {PutLinks}
+                              </table></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　Search</td>
+                            </tr>
+                            <tr>
+                              <td class="content4"><form method="post" action="./index.php?play=search">
+                                  <div align="center">
+                                    <input name="keyword" type="text" class="input" onfocus=this.select() onClick=this.value='' onmouseover=this.focus() value="请输入关键字" size="18">
+                                    <input name="action2" type="submit" value="搜索" class="botton">
+                                  </div>
+                              </form></td>
+                            </tr>
+                          </table>
+                        <img src="{templatesURL}/images/spacer.gif" width="1" height="16"> </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+              <SPAN 
+                        class=smalltxt></SPAN></TD>
+              <TD height="100%" valign="top" bgcolor="#ffffff">
+                <table width="100%" border=0 cellpadding=4 cellspacing=1>
+                  <tbody>
+                    <tr class=header> 
+                      <td width="56%"><strong><img src="{templatesURL}/images/arrow_dw.gif" width="33" height="11">{blogTitle}</strong></td>
+                      <td width="44%">天气: <img src="{blogWeather}" align="absmiddle"> 
+                        &nbsp;&nbsp;&nbsp;时间:{blogAddtime}</td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff> <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                          <tbody>
+                            <tr> 
+                              <td align=middle class=smalltxt 
+                         onMouseOver="this.style.backgroundColor='#F8F8F8'" 
+                      onMouseOut="this.style.backgroundColor='#FFFFFF'"><div align="left">{blogContent}<br>
+                                </div></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff> <table cellspacing=0 cellpadding=0 width="100%" border=0>
+                          <tbody>
+                            <tr> 
+                              <td class=smalltxt 
+                        align=middle ><div align="right"><span class="blogother">发布者: 
+                                  <a href="mailto:{blogEmail}" class="cn">{blogAuthor}</a> 
+                                  栏目: [{blogSort}] | <a href="./comment.php?action=add&id={blogID}" class="cn">评论：{blogVisits}</a> 
+                                  | 共点击({viewNum})次 | <a href="./index.php?play=show&id={blogID}" target="_blank"class="cn">[阅读全文]</a></span></div></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff><div align="left"><a href="javascript:history.go(-1);"><strong></strong><strong>[返回上一页]</strong></a></div></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff><div align="left"><span class="replytitle"><strong><img src="{templatesURL}/images/arrow_dw.gif" width="33" height="11">该Blog评论信息</strong></span></div></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff><div align="left">{PutReply}</div></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff><div align="left"><span class="puttitle"><strong><img src="{templatesURL}/images/arrow_dw.gif" width="33" height="11">发表评论</strong></span></div></td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2" align=middle bgcolor=#ffffff>
+					  <form method="post" action="./?play=reply&tag=true">
+                          <table  bgcolor=#F4F4F4 width="100%" border="0" cellpadding="0" cellspacing="2" class="main">
+                            <tr> 
+                              <td>　</td>
+                            </tr>
+                            <tr> 
+                              <td colspan="3">&nbsp; <a href="{templatesURL}/helper/exUbbHelp.htm" target="_blank">如果想使你的评论更具风格的话,请察看ExUbb标签.</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="3">&nbsp;</td>
+                            </tr>
+                            <tr> 
+                              <td width="12%">&nbsp; 昵称:</td>
+                              <td width="26%"> <input name="name" type="text" id="author" size="15" class="input"> 
+                                <font color="#FF0000">*</font> </td>
+                              <td width="62%">密码: 
+                                <input name="password" type="password" size="15" class="input"> 
+                                &nbsp;&nbsp; <input type="checkbox" name="register" value="yes" class="botton">
+                                同时注册这个昵称</td>
+                            </tr>
+                            <tr> 
+                              <td>&nbsp; E-mail:</td>
+                              <td colspan="2"><input name="email" type="text" size="40" class="input"></td>
+                            </tr>
+                            <tr> 
+                              <td>&nbsp; 主页:</td>
+                              <td colspan="2"><input name="homepage" type="text" size="40" class="input">
+                                http://开头 </td>
+                            </tr>
+                            <tr> 
+                              <td>&nbsp; QQ号:</td>
+                              <td colspan="2"><input name="qq" type="text" size="40" class="input"></td>
+                            </tr>
+                            <tr> 
+                              <td valign="top">&nbsp; 评论:</td>
+                              <td colspan="2"><textarea name="content" cols="60" rows="5" wrap="VIRTUAL" class="input"></textarea> 
+                                <font color="#FF0000">*</font> </td>
+                            </tr>
+                            <tr> 
+                              <td height="36" colspan="3"><div align="center"> 
+                                  <input type="hidden" name="id" value="{currentID}">
+                                  <input type="submit" name="action" value="提交信息" class="botton">
+                                </div></td>
+                            </tr>
+                          </table>
+                        </form></td>
+                    </tr>
+                  </tbody>
+                </table></TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center>
+  <TBODY>
+    <TR>
+      <TD vAlign=top class=multi></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+      bgColor=#eeeeee border=0>
+  <TBODY>
+    <TR>
+      <TD align=right 
+          background="{templatesURL}/images/left_title_03.gif" 
+          height=34><SPAN class=mediumtxt><A class=mediumtxt hideFocus 
+            href="mailto:exblog@fengling.net">联系我们</A> | 开发团队: </SPAN><SPAN 
+            style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"><A 
+            hideFocus href="./intro.htm" class="copy">exSoft</A></SPAN>&nbsp;|&nbsp;感谢<a href="http://my.i7c.com" class="copy">饭饭</a>提供本界面原型&nbsp;</TD>
+    </TR>
+    <TR>
+      <TD align=middle height=42><SPAN 
+            style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"></SPAN>
+          <TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
+            <TBODY>
+              <TR>
+                
+              <TD align=right width=380><SPAN style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial">Powered 
+                by <a href="http://www.fengling.net"><img src="{templatesURL}/images/icon_power.png" alt="本网站由 exBlog 构架" width="80" height="15" border="0" align="absmiddle"></a></span></TD>
+                <TD align=right><SPAN style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"> {copyright}</SPAN></TD>
+              </TR>
+            </TBODY>
+        </TABLE></TD>
+      <A 
+        name=#bottom></A></TR>
+  </TBODY>
+</TABLE>
+</BODY></HTML>
