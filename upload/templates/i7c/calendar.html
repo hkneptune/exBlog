@@ -1,0 +1,200 @@
+<HTML><HEAD><TITLE>{currentSort}</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR>
+<META content=TRUE name=MSSmartTagsPreventParsing>
+<META http-equiv=MSThemeCompatible content=Yes>
+<link href="{templatesURL}/style/styles.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="{templatesURL}/style/common.js"></SCRIPT>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
+</HEAD>
+<BODY leftMargin=0 topMargin=0 rightMargin=0>
+<TABLE width="750" border=0 align="center" cellPadding=0 cellSpacing=0 
+background="{templatesURL}/images/top_bg.gif">
+  <TBODY>
+    <TR>
+      <TD align=center width=147><A hideFocus 
+      href="./"><IMG alt="logo" src="{templatesURL}/images/logo.gif" border=0></A> </TD>
+      <TD align=right>
+        <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <TBODY>
+            <TR align=right>
+              <TD height="38">　 <SPAN class=bold><A hideFocus 
+            href="./help.htm" title="关于exBlog..." target="content">关　　于</A></SPAN> | <SPAN class=bold><A hideFocus 
+            href="./admin/login.php" title="guest莫进">管　　理</A></SPAN>&nbsp;&nbsp;　</TD>
+            </TR>
+            <TR vAlign=center align=right>
+              <TD height=27><div align="left"><SPAN class=bold><a href="./index.php?play" title="回到首页">首　　页</a></SPAN> | <SPAN class=bold>{PutColumn}</SPAN><SPAN class=bold><A hideFocus 
+            href="./index.php?play=links" title="全是我的好朋友">友情链接</A></SPAN></div></TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<table width="750" height="13"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div align="center">
+        <MARQUEE onmouseover=this.stop(); 
+                              onmouseout=this.start(); scrollAmount=3>
+        {putAnnounce}</MARQUEE>
+    </div></td>
+  </tr>
+</table>
+<TABLE class=green2 cellSpacing=0 cellPadding=0 width="750" 
+            align=center border=0>
+  <TBODY>
+    <TR>
+      <TD>
+        <TABLE cellSpacing=0 cellPadding=4 width="100%" border=0>
+          <TBODY>
+            <TR class=category>
+              <TD height=18><font color="#FFFFFF">您的位置：<a href="./index.php?play" class="cn"><font color="#FFFFFF"><b>首　　页</b></font></a> >> <b>{currentSort}</b></span></font></TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+            bgColor=#dbdbdb border=0>
+              <TBODY>
+              <TR>
+<TD height=3></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+border=0>
+  <TBODY>
+    <TR>
+      <TD bgColor=#dbdbdb>
+        <TABLE style="TABLE-LAYOUT: fixed; WORD-WRAP: break-word" 
+                  cellSpacing=1 cellPadding=4 width="100%" border=0>
+          <TBODY>
+            <TR bgColor=#ffffff><A name=pid15412></A>
+                <TD vAlign=top width="200">
+                  <TABLE cellSpacing=0 cellPadding=5 width="95%" 
+                        align=center border=0>
+                    <TBODY>
+                      <TR>
+                        <TD>{PutCalendar}<br>
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　统计信息</td>
+                            </tr>
+                            <tr>
+                              <td class="content1"><div align="center"></div>                                <table align="left">
+                                  <tr>
+                                    <td>共有Blog：{blogNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>共有评论：{reNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>共访问数：{visNum}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>今日访问：{todNum}</td>
+                                  </tr>
+                              </table>
+                              <div align="center"></div></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　最新评论</td>
+                            </tr>
+                            <tr>
+                              <td class="content2"><table>
+        {PutComment}
+                              </table></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　友情链接</td>
+                            </tr>
+                            <tr>
+                              <td class="content3"><table>
+        {PutLinks}
+                              </table></td>
+                            </tr>
+                          </table>
+                          <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+                          <table width="180" border="0" align="center" cellpadding="0" cellspacing="0" class="border2">
+                            <tr>
+                              <td height="20" valign="middle" bgcolor="#e6e6e6" class="title1">　Search</td>
+                            </tr>
+                            <tr>
+                              <td class="content4"><form method="post" action="./index.php?play=search">
+                                  <div align="center">
+                                    <input name="keyword" type="text" class="input" onfocus=this.select() onClick=this.value='' onmouseover=this.focus() value="请输入关键字" size="18">
+                                    <input name="action2" type="submit" value="搜索" class="botton">
+                                  </div>
+                              </form></td>
+                            </tr>
+                          </table>
+                        <img src="{templatesURL}/images/spacer.gif" width="1" height="16"> </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+              <SPAN 
+                        class=smalltxt></SPAN></TD>
+              <TD height="100%" valign="top" bgcolor="#ffffff">
+                <TABLE 
+                        style="TABLE-LAYOUT: fixed; WORD-WRAP: break-word" 
+                        height="100%" cellSpacing=6 cellPadding=0 width="100%" 
+                        border=0>
+                    <TBODY>
+                      <TR>
+                        <TD vAlign=top>{PutBlog}</TD>
+                      </TR>
+                      <TR>
+      <td height="30" class="multi"><span class="pagenum"><a href="#">第<font color="#FF0000">{curPage}</font>页</a></span>  <b></b> <span class="pagenum"><a href="#">共<font color="#FF0000">{totalPage}</font>页</a></span>  <b></b> <span class="pagenum"><a  hidefocus=true href="./index.php?play=view&sort={sortName}&page={prev_page}">上　页</a></span>  <b></b> <span class="pagenum"><a  hidefocus=true href="./index.php?play=view&sort={sortName}&page={next_page}">下　页</a></span> <span class="pagenum"><a  hidefocus=true href="./index.php?play=view&sort={sortName}">首　页</a></span>   <span class="pagenum"><a  hidefocus=true href="./index.php?play=view&sort={sortName}&page={total_page}">末　页</a></span></td>
+                      </TR>
+                    </TBODY>
+                </TABLE>
+              </TD>
+            </TR>
+          </TBODY>
+      </TABLE></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center>
+  <TBODY>
+    <TR>
+      <TD vAlign=top class=multi></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="750" align=center 
+      bgColor=#eeeeee border=0>
+  <TBODY>
+    <TR>
+      <TD align=right 
+          background="{templatesURL}/images/left_title_03.gif" 
+          height=34><SPAN class=mediumtxt><A class=mediumtxt hideFocus 
+            href="mailto:exblog@fengling.net">联系我们</A> | 开发团队: </SPAN><SPAN 
+            style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"><A 
+            hideFocus href="./intro.htm" class="copy">exSoft</A></SPAN>&nbsp;|&nbsp;感谢<a href="http://my.i7c.com" class="copy">饭饭</a>提供本界面原型&nbsp;</TD>
+    </TR>
+    <TR>
+      <TD align=middle height=42><SPAN 
+            style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"></SPAN>
+          <TABLE cellSpacing=0 cellPadding=0 width="98%" border=0>
+            <TBODY>
+              <TR>
+                <TD align=right width=380><SPAN style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial">Powered by <a href="http://www.exBlog.net"><img src="{templatesURL}/images/icon_power.png" alt="本网站由 exBlog 构架" width="80" height="15" border="0" align="absmiddle"></a></span></TD>
+                <TD align=right><SPAN style="FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Arial"> {copyright}</SPAN></TD>
+              </TR>
+            </TBODY>
+        </TABLE></TD>
+      <A 
+        name=#bottom></A></TR>
+  </TBODY>
+</TABLE>
+</BODY></HTML>

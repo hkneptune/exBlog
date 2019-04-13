@@ -1,0 +1,26 @@
+<!-- BEGIN RowCalendar -->
+<table width="95%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td id="caltitle">{currentYearMonth}</td>
+  </tr>
+</table>
+<table id="datetable" width="95%" border="0" cellpadding="0" cellspacing="0">
+  <tr id="weekcell"> 
+    <td>日</td>
+    <td>一</td>
+    <td>二</td>
+    <td>三</td>
+    <td>四</td>
+    <td>五</td>
+    <td>六</td>
+  </tr>
+  <tr>
+	{today}
+  </tr>
+</table>
+<table width="95%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" class="calfooter"><A class="arrow" href="./?play=calendar&year={prev_year}&month={curMonth}">3</A> 年 <A class="arrow" href="./?play=calendar&year={next_year}&month={curMonth}">4</A>　　<A class="arrow" href="./?play=calendar&year={curYear}&month={prev_month}">3</a> 月 <A class="arrow" href="./?play=calendar&year={curYear}&month={next_month}">4</a></td>
+  </tr>
+</table>
+<!-- END RowCalendar -->

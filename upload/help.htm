@@ -1,0 +1,371 @@
+<html>
+<head>
+<title>[使用说明]--exBlog 网络日志(PHP+MYSQL) 1.2.0 版</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.table1 {  border: 1px solid #666666}
+.td1 {  background-color: #99ccff}
+.td2 {  background-color: #CAE4FF; font-weight: bold; border-color: #000000 black black; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+table {  font-size: 12px; line-height: 20px}
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="600" border="0" align="center" cellspacing="0" cellpadding="4" class="table1">
+ <tr> 
+    <td class="td1" align="center" colspan="2"><b>exBlog 网络日志(PHP+MYSQL) 1.2.0 版 
+      使用说明</b></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li><a href="#1">功能介绍</a> 
+   <li><a href="#2">安装说明</a> 
+   <li><a href="#3">使用协议</a> 
+   <li><a href="#4">升级历史</a> 
+   <li><a href="#5">版权声明</a> 
+   <li><a href="#6">关于我们</a>
+  </td>
+ </tr>
+ <tr> 
+  <td height="19" class="td2">功能介绍<a name="1"></a></td>
+  <td height="19" class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"><p>+ 使用了模版(templates)技术，能让网站在瞬间改变样式；<br>
+        + 本程式副带5套模版(可自已制作模片，无须接触任何PHP代码)；<br>
+        + 用户分级管理，不同等级有不同管理权限；<br>
+        + 支持首页调用，能自由调用各栏目或所有栏目最新文章；<br>
+        + 支持公告，日历功能(能通过日历选择当前发表的BLOG记录)；<br>
+        + 支持用户论评功能，可对BLOG文章自由进行评论；<br>
+        + 添加&amp;删除&amp;编辑[BLOG,友情链接,公告,用户]；<br>
+        + 支持WAP浏览以及WAP发表、编辑、管理；<br>
+		+ 隐藏日志功能；<br>
+		+ 分类，链接重新排序功能；<br>
+		+ 站长回复评论功能；<br>
+   + 修改点添加/编辑公告, 提示语法错误, 屏幕左下脚有黄色图标表示出错<BR>
+   + 所有标签都应类似[url]支持选中对象后自动用标签夹住<BR>
+   + 修改 i7c模板的RSS2.0在浏览器中点击白屏<BR>
+   + 解决了优化、备份数据库是对整个库操作, 有安全性隐患<BR>
+   + 解决了非图片文件, 如exe等其他文件类型无法上传<BR>
+        + 更多...<br>
+        <br>
+      </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">安装说明<a name="2"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2">1. 系统要求<br>
+   　　===========================================<br>
+   　　正常使用该软件您必须保证您的<br>
+   　　服务器满足如下要求： <br>
+      　　1) 软件环境：Apache 1.3.X + PHP 4.2.0 及以上 <br>
+   　　2) 数 据 库：MySQL 3.23.X 及以上<br>
+   　　3) 其 他：服务器必须安装 微软IE浏览器4.0版本以上，推荐IE5.5+<br>
+      [本程序编写环境] <strong>EasyPHP 1.6.0.0</strong> ( 偶懒,没配置环境 ~!~ )<br>
+      <p>2. 系统安装<br>
+        　　===========================================<br>
+        　　1)在支持PHP的服务器上解开本软件包。<br>
+        　　2)将 ./upload 目录下所有文件上传至服务器。首页面地址是：index.php<br>
+        　　3)登录MySQL，建立一个新的数据库，命名任意，如 exblog。<br>
+        　　<font color="#0000FF">BTW:</font>如果你无权限建表,请在config.inc.php中添写ICP给的数据库名<br>
+        　　4)将 ./install/config.inc.php 中相关内容修改为您的信息。 <br>
+        　　<strong>注意：</strong>一定要将数据库的名称改为你刚才新建的名称，如上应为 exblog<br>
+        　　5)在IE地址栏运行 &lt;安装路径&gt;/admin/install.php 按提示进行建表，创建管理员等步骤。<br>
+        　　6)安装完成! 在IE地址栏运行 &lt;安装路径&gt;/admin/login.php 登录后台管理程式。 <br>
+        　　 <br>
+      </p>  </td>
+ </tr>
+ <tr> 
+  <td class="td2">使用协议<a name="3"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <p> 1、exBlog 为免费程序,你可以修改源代码但请保留版权信息.<br>
+个人网站可以免费使用本系统,并可自由传播,传播过程请保持本系统的完整性.<br>
+任何个人或企业未经许可不得将本系统用作商业用途.</p>
+   <p> 2、使用过程中为美化程序或修改BUG您可以对源代码进行修改,如要传播您的修改版本<br>
+  请保留原程序中的 exBlog 版权信息.<br>
+  <br>
+  3、您可以查看 exBlog 的源代码,但在没有获得作者正式许可的情况下,不能以除了<br>
+  美化界面、修改BUG以外的其他任何理由修改 exBlog 的源程序,更不能修改相关<br>
+  说明档和程序显示的版权信息. </p>
+   <p> 4、exBlog 是开放源代码软件,如果您对 exBlog 有好的想法和意见,并希望自己<br>
+  修改 exBlog 完善其功能时,必须与我们取得联系,在获得我们正式的许可后,<br>
+  在完整保留 exBlog 版权信息和说明档的前提下. 对 exBlog 进行修改. </p>
+   <p> 5、本程序欢迎转载,您可以在原样完整保留全部版权信息和说明档的前提下,传播和发布<br>
+  本程序,但将 exBlog 用于商业目的或违背上述条款的传播都是被禁止的. </p>
+   <p> 6、安装 exBlog 建立在完全同意本授权文档的基础之上,因此而产生的纠纷,违反授权<br>
+  协议的一方将承担全部责任.</p>
+      <p> 7、如您想获得技术支持,请EMAIL至<a href="mailto:exblog@fengling.net">exblog@fengling.net</a>进行完全免费的注册,注明网站URL<br>
+  在以后过程中如程序有BUG或升级将通过EMAIL通知您.<br>
+   </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">升级历史<a name="4"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+    <td colspan="2"><li>exBlog Ver: 1.2.0 [L] <span class="style1">圣诞版</span> 2004-12-21<br>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
++ [修复] iMSN 模版的一个公告显示错误<br>
+  + [修复] 后台的页面标题错误<br>
+  + [修复] 各模版中的版本号错误<br>
+  + [修复] &quot;编辑分类&quot;的 Bug<br>
+  + [修复] 公告附件上传成功后不显示的Bug<br>
+  + [修复] 公告附件部分文件类型上传失败的Bug<br>
+  + [修复] i7c模版的一个图片错误<br>
+  + [修复] 日历的显示错误(图片红叉, 窄版变宽版等等)<br>
+  + [修复] pink模板的表格显示错误, 改为自动判断单元格高度<br>
+  + [修复] 无评论或者无友情连接时显示 NULL 的 Bug, 改为显示&quot;当前无任何评论&quot;和&quot;当前无任何友情连接&quot;<br>
+  + [修复] 完善 UBB 系统, 为所有标签添加了按钮以及对应的 js 代码, 方便用户使用. 更强大的“万能标签”功能将在下一个版本 1.2.1 放出<br>
+  + [修复] 应广大网友要求, 恢复后台的简单风格, 细微调整了后台的一些连接排列<br>
+  + [修复] 修复了备份, 导出数据库的安全漏洞<br>
+  + [修复] 修复&quot;编辑公告&quot;白屏<br>
+  + [增加] 全面启用新的版本号规则: 版本号最后一位为偶数的是稳定版, 奇数为测试版, [L] 为精简版, [D] 为豪华版 <br>
+  + [增加] 禁止访客注册与管理员同名的&quot;个性评论ID&quot;<br>
+  + [增加] 发表新文章时就应该允许编辑发布时间, 而不仅仅是等到发布之后再来编辑<br>
+  + [增加] 圣诞模板 xmas, 此模版是严格按照新的 html 规范以及 CSS 2.0 编写的, 同时也兼容了老规范, 所以可能在 IE 6.0 以下版本浏览器会出现显示故障, 故未作为默认模版, 有需要的用户可以自行选择。<br>
+  + [增加] Blog 文章批量删除功能<br>
+  + [增加] 文章&quot;提交之前&quot;使用JavaScript检查&quot;文章标题&quot;以及&quot;正文&quot;是否为空, 如果为空警告, 进一步防止疏忽导致文章内容丢失的问题, 虽然会把正文自动保存到剪贴板, 但是双保险更安全嘛. :)<br>
+  + [增加] 部分 UBB 自动识别<br>
+  + [增加] &quot;最新10篇回复&quot;RSS<br>
+  + [增加] 删除 Blog 时警告信息, 最大程度的防止误删除<br>
+  + [增加] 公告的发布能力, 允许公告中使用各种UBB标签以及上传附件<br>
+  + [增加] 天气中的&quot;阴天&quot;选项<br>
+  + [增加] 发表Blog以及公告时输入框的拉长, 缩短功能<br>
+  + [增加] 在不允许访问的目录下放置了空的index.html文件以增加安全性<br>
+  + [取消] 无任何Blog文章时的评论以及阅读全文的连接, 修复逻辑错误<br>
+  + [取消] 因时间仓促, 加上功能不成熟, 暂时去掉了 html 编辑器功能, 今后会在适当的时候重新放出<br>
+  + [网站] 从下一个版本开始我们将只提供 i7c, pink 两套模版, 更多模版请关注我们的模版网站 <a href="http://skin.exblog.net/">http://skin.exblog.net/</a><br>
+  + [网站] 从下一个版本开始我们将只发布 Blog 最基本的功能模块, 而一些增强插件如 RSS 0.91 支持等请关注我们的插件网站 <a href="http://plugin.exblog.net/">http://plugin.exblog.net/</a><br>
+  + [人事] 热烈欢迎 <span class="style1">Anthrax</span> 加入开发团队 (鼓掌! 鼓掌!)<br>
+  + <span class="style1">[特别]</span> 圣诞临近, 让我们的 exBlog 1.2.0 [L] 圣诞版 作为我们为大家准备的一份小小的圣诞礼物吧, 祝大家圣诞快乐. 希望大家在即将到来的新的一年里学习进步, 工作顺利.<br>
+  考试临近, exBlog 的开发暂停至 2005年01月15日, 下一个版本 1.2.1 将会给您带来更多惊喜.</p>
+	  <li>exBlog Ver: 1.2.0 RC3 2004/11/26<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+	######## 模板修复方面 #########<br>
+<br>
+   + 所有模版需将所有的图标（RSS1.0、RSS2.0、ATOM、CHANNEL、MYSQL、PHP、EXBLOG 共七个）。<br>
+   + 修改完所有的模板，完全适合RC3的要求<br>
+<br>
+	######## 程序修复方面 #########<br>
+<br>
+   + RSS,ATOM的Bugs的修正(现在可以正确导入了)。如：blog发布时间等<br>
+   + CHANNEL频道功能<br>
+   + 如果当前无评论或者无友情连接，不应该显示NULL而应该显示“当前无XXXXXXX”<br>
+   + 所有标签都应类似[url]支持选中对象后自动用标签夹住<br>
+   + i7c的RSS2.0在浏览器中点击白屏<br>
+   + 优化、备份数据库是对整个库操作, 有安全性隐患<br>
+   + 非图片文件, 如exe等其他文件类型无法上传<br>
+<br>
+	######## WAP方面 #########<br>
+<br>
+   + 手机浏览最新几篇日记<br>
+   + 手机发表日记,有用户名认证,有分类选择,置顶选择,天气选择,隐藏选择,全面兼容WEB的blog发表体系.<br>
+   + 手记浏览网站信息，包括共有blog数目，评论数目，今日访问，总共访问<br>
+   + 手记浏览站长信息，包括QQ,E-mail,name,age等信息，以上信息自动从现有数据库表中读取，也可将自己的手机号手动输入显示文件<br>
+   + 手记浏览评论<br>
+   + 手记发表评论<br>
+	至此WAP开发告一段落，功能基本可以满足BLOG需要，在同类程序的WAP功能也可列前列<br>
+<br>
+	######## 编辑器方面 #########<br>
+<br>
+   + 广泛支持常见ubb。media 标签自动识别媒体文件。想法：一般的ubb我们支持，但较特别的我们并不提倡使用。<br>
+   + 所见即所得Html编辑器。让HTMLBlog和UBBBlog共存。（评论、公告是否应该支持Html，还有待商榷）<br>
+	另：可选用 fckeditor 2.0 Beta2 插件，替换配套Html编辑器，但暂时并不推荐。<br>
+    <p>
+	<li>exBlog Ver: 1.2.0 RC2 2004/10/31<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+   + 增加文件上传功能,自动判断上传文件类型, 改进上传文件命名方式, 使用原始文件名命名, 便于管理<br>
+   + 增加文章隐藏功能<br>
+   + 增加发表公告还原功能<br>
+   + 增加留言编辑, 删除, 站长回复功能<br>
+   + 表情图片添加方式改为在光标处添加<br>
+   + UBB 代码新增表格转换功能 (可选补丁)<br>
+   + 增加初级 WAP 浏览功能 (Hooooooooooooooot!!!)<br>
+   + 增加数据库备份, 数据库优化功能<br>
+   + 增加 RSS 2.0, ATOM 0.3 聚合格式支持<br>
+   + 修复, 增加 coolsee, iMSN, madblog2 三个新模板<br>
+   + 修复原程式UBB代码[rimg][limg]失灵的BUG<br> 
+   + 修复添加BLOG天气有夜晚选项, 如果选择造成数据库查询失败的BUG<br> 
+   + 修复编辑公告失灵BUG<br>
+   + 修复查看评论时再点击评论链接错误的BUG<br> 
+   + 编辑文章时, “是否置顶”以前的状态也应该从数据库中取出<br>
+   + 修复没有文章时天气图片显示失败的BUG)包括按月查询和按分类查询)<br>
+   + 修复增加分类, 友情链接时ID号从10000开始的BUG<br>
+   + 修复后台管理左框架JAVA失灵BUG<br>
+   + 提供“原始的简洁后台”补丁包! (可选补丁, 另听取网友意见, 如果喜欢Dvbbs后台风格的请在论坛上提出)<br>
+   + 增加了 madcn 模板并将原先的模板整合进来, 现在有五套模板了;)<br>
+   + 修正了新版UBB编辑器的一些小问题, 实现了表情/UBB代码随处插入<br>
+   + 部分细节小修补 (Viva: 555..快累死了..)<br>
+
+    <p>
+	<li>exBlog Ver: 1.2.0 RC1 2004/10/23<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+   + 增加了图片上传功能, 选择是否给图片加水印, 水印的位置, 水印类型（文字或图片）<br>
+   + 修改pink摸板, 使之能使用1.2.0所有新功能<br>
+   + 增加修改分类显示顺序功能<br>
+   + 增加修改友情链接顺序功能<br>
+   + 增加新版UBB编辑器, 不必手动编写代码, 可以选定添加, 在编辑BLOG, 编辑公告时都可使用! 如想把12345中的23两个字变红, 只要用鼠标选中23两字然后在选择工具栏上的红色即可<br>
+   + 增加发表BLOG时内容自动复制剪贴板功能, 可以一键恢复<br>
+   + UBB代码嵌套BUG修复, UBB支持更加完美<br>
+   + 修正发表评论UBB代码失灵BUG<br>
+   + 修正天气状况设定, 单独设置表格存放<br>
+   + 修正已通过友情链接仍然显示拒绝链接的BUG<br>
+   + 修正按日期查询失败BUG<br>
+   + 修正了编辑以往BLOG时天气需要重新设定的问题, 本版本会自动独取原来的天气设定<br>
+   + 修正按日期查询天气图片显示错误BUG<br>
+   + 增加修改BLOG日期功能<br>
+   + 修正公告编辑显示的是公告删除的BUG<br>
+   + 取消了exBook的捆绑<br>
+   + 前, 后台一些细微的变化及bugs修复<br>
+   + <font color="#FF0000">sheer, netxiong, madcn</font> 正式加入 exSoft团队<br>
+	<p>
+	<li>exBlog Ver: 1.2.0 PF1 2004/09/06<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+   + 增加后台登录验证码功能<br>
+   + 增加网友评论注册功能<br>
+   + 增加了统计在线人数功能<br>
+   + 增加了 blog 置顶功能<br>
+   + 增加了前台可申请友情链接功能<br>
+   + 增加了是否开放 blog 功能<br>
+   + 修正了 RSS 1.0 , 可正常使用相关浏览工具浏览 RSS Feed<br>
+   + 修正了 ExUbb 代码功能, 能识别更多 ExUbb 代码格式<br>
+   + 修正了若干 bug<br>
+   + 听取网友建议,取消 exbook 捆绑<br>
+    <p>
+	<li>exBlog Ver: 1.1.0 Plus! 2004/03/30<br>
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>
+        + 增加了对swf,ra,rm,wmv,wma,iframe的支持,可直接在页面显示<br>
+        + 修改了quote的显示<br>
+        + 修正了对大图片的显示,不再破坏整体布局<br>
+        + 管理菜单最下边增加了回首页<br>
+        + 启用三段式版本号<br>
+        + <font color="#FF0000">流水流云</font>加入 exBlog 开发小组<br>
+        <br>
+      <li>exBlog Ver: 1.1.0 2004/02/11<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+        + 捆绑了exbook留言本<br>
+        + 自动检查install安装文件安装完成后是否存在,以免造成安全漏洞.<br>
+        + 增加了公告功能<br>
+        + 增加日历功能<br>
+        + 增加了页面调用功能<br>
+        + 增加了一套 pink 模版<br>
+        + 后台编辑文章功能加强<br>
+        + 修改页面显示链接为随机显示</p> 
+      <p>
+      <li>exBlogMix Ver: 1.0.0 2004/02/01<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+        修改了前一个内测版本的全部BUG，修改了在不同分辨率下显示变形的错误。<br>
+        正式确定了所有代码和界面风格，为正式发布版本。<br>
+        <br>
+      <li>exBlogMix Ver: 0.0.1 2004/01/29<br>
+        ^^^^^^^^^^^^^^^^^^^^^^<br>
+为啥加个mix呢?因为目终目标是个全站程序所以在后面加了个mix(混合)此版本中<br>
+修改了exBlog中的一些BUG,感谢朋友skyshui的测试,使用了PHPLIB的templates.<br>
+        <font color="#FF0000">hunter</font>加入团队，并确定设计了仿msn风格的页面. 
+        <p>
+      <li>exBlog Ver: 0.0.1 2003/12/25<br>
+        ^^^^^^^^^^^^^^^^^^^<br>
+  exBlog第一个版本,算是对自已还能继续读书的一个礼物吧.以前就有个想法写<br>
+  一个全站程序,由于种种原因一直没有完成.现在有时间了进入大一时间还算充裕<br>
+  所以诞生了这个exBlog. Enjoy it. ^__^ </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">版权声明<a name="5"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li>本软件为共享软件(shareware)提供个人网站免费使用，可以在使用中修改，但要保留exblog的版权信息； 　 
+   <li>转载，散播请勿删除版权声明；
+   <li>未经许可不得将本系统用于商业用途；
+   <li>如果可能，请在您的网站做上我们的链接，希望能给予合作。谢谢！ 
+  </td>
+ </tr>
+ <tr> 
+  <td class="td2">关于我们<a name="6"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <table width="95%" border="0" align=center cellpadding="４" cellspacing="1" bgcolor="#CCCCCC">
+     <tr bgcolor="#FFFFFF">
+       <td height=25 colspan=4 align="center"><b>开发团队 - exSoft</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [项目经理]</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="15%" height=23 align="center"><strong>netxiong</strong></td>
+       <td width="35%">&nbsp;Manager - 01</td>
+       <td width="15%" height=23 align="center"><strong>Viva</strong></td>
+       <td width="35%">&nbsp;Manager - 02</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [代码部] - 招人ing..</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>elliott</strong></td>
+       <td colspan="3">&nbsp;Coder - 01 负责程序开发、Bugs 修复程序原创作者</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Tomy:</strong></td>
+       <td colspan="3">&nbsp;Coder - 02 负责协助 elliott 完善程序代码，升级文档编写</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Sheer:</strong></td>
+       <td colspan="3">&nbsp;Coder - 03 负责 1.2.0 RC1 及后续版本开发，Bugs修复</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>流水流云:</strong></td>
+       <td colspan="3">&nbsp;Coder - 04 负责程序测试、意见统筹及Bugs修复</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [美工部] - 招人ing.. </b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Hunter</strong></td>
+       <td colspan="3">&nbsp;Skiner - 01 程序原创美工</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>madman</strong></td>
+       <td colspan="3">&nbsp;Skiner - 02 程序现任美工</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [文档部] </b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Tomy</strong></td>
+       <td colspan="3">&nbsp;Documenter - 01</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Viva</strong></td>
+       <td colspan="3">&nbsp;Documenter - 02</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [测试部]</b>- 欢迎大家加入 exBlog 的 Tester 行列。您的名字将会光荣出现在今后我们的发布版本中</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>流水流云</strong></td>
+       <td colspan="3">&nbsp;Tester - 01</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Viva</strong></td>
+       <td colspan="3">&nbsp;Tester - 02</td>
+     </tr>
+   </table>
+   <br>
+   <li>官方网站 <a href="http://www.exblog.net/">http://www.exblog.net/</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.exblog.org/">http://www.exblog.org/</a>
+   <li>支持网站 <a href="http://www.fengling.net/">http://www.fengling.net/</a>   
+   <li>支持论坛 <a href="http://bbs.fengling.net/">http://bbs.fengling.net/</a> </td>
+ </tr>
+</table>
+</body>
+</html>

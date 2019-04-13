@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>exBlog HTML编辑器演示</title>
+<script>
+function openeditor(){
+if (navigator.appName!="Microsoft Internet Explorer")
+   alert("此功能 Netscape 用户不能使用！")
+else {newwin=window.open('editor.html','','width=544,height=294');  newwin.focus(); }
+}
+</script>
+
+<br>这个页面除了演示没有其他用处。
+点击这个打开<a href="javascript:openeditor();" title="使用[HTML编辑器]更方便所见即所得，但功能有限。  不推荐用它来生成UBB代码">◆[HTML编辑器]</a>
+
+<form name="exEdit">
+<textarea name="content" style="width:528px ;height:144px"></textarea>
+</form>

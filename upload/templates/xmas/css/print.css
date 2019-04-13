@@ -1,0 +1,44 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:	0.85em;
+	text-align:center;
+}
+p {text-align:left;}
+h1 {font-size: 1.85em}
+
+#location {
+	margin:auto;
+	padding:0px;
+	width:770px;
+	height:auto;
+	text-align:left;
+}
+#main {
+	margin:auto;
+	padding:20px;
+	width:770px;
+	height:auto;
+	border: 1px solid #CE3108;
+}
+#info {
+	margin:auto;
+	padding:0px;
+	width:auto;
+	height:auto;
+}
+#tool {
+	margin:auto;
+	padding-top:10px;
+	width:auto;
+	height:auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;	
+}
+
+#footer {
+	margin-right:auto;
+	margin-left:auto;
+	padding-top:10px;
+	color:#CE3108;
+}
