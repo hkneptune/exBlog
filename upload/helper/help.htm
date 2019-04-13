@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>[使用说明]--exBlog 网络日志(PHP+MYSQL) 1.3.0 版</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.table1 {  border: 1px solid #666666}
+.td1 {  background-color: #99ccff}
+.td2 {  background-color: #CAE4FF; font-weight: bold; border-color: #000000 black black; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+table {  font-size: 12px; line-height: 20px}
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="600" border="0" align="center" cellspacing="0" cellpadding="4" class="table1">
+ <tr> 
+    <td class="td1" align="center" colspan="2"><b>exBlog 网络日志(PHP+MYSQL) 1.3.0 版 
+      使用说明</b></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li><a href="#1">功能介绍</a> 
+   <li><a href="#2">安装说明</a> 
+   <li><a href="#3">使用协议</a> 
+   <li><a href="#5">版权声明</a> 
+   <li><a href="#6">关于我们</a>
+  </td>
+ </tr>
+ <tr> 
+  <td height="19" class="td2">功能介绍<a name="1"></a></td>
+  <td height="19" class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"><p>+ 使用了模版(templates)技术，能让网站在瞬间改变样式；<br>
+        + 本程式副带5套模版(可自已制作模片，无须接触任何PHP代码)；<br>
+        + 用户分级管理，不同等级有不同管理权限；<br>
+        + 支持首页调用，能自由调用各栏目或所有栏目最新文章；<br>
+        + 支持公告，日历功能(能通过日历选择当前发表的BLOG记录)；<br>
+        + 支持用户论评功能，可对BLOG文章自由进行评论；<br>
+        + 添加&amp;删除&amp;编辑[BLOG,友情链接,公告,用户]；<br>
+        + 支持WAP浏览以及WAP发表、编辑、管理；<br>
+		+ 隐藏日志功能；<br>
+		+ 分类，链接重新排序功能；<br>
+		+ 站长回复评论功能；<br>
+   + 修改点添加/编辑公告, 提示语法错误, 屏幕左下脚有黄色图标表示出错<BR>
+   + 所有标签都应类似[url]支持选中对象后自动用标签夹住<BR>
+   + 修改 i7c模板的RSS2.0在浏览器中点击白屏<BR>
+   + 解决了优化、备份数据库是对整个库操作, 有安全性隐患<BR>
+   + 解决了非图片文件, 如exe等其他文件类型无法上传<BR>
+        + 更多...<br>
+        <br>
+      </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">安装说明<a name="2"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2">1. 系统要求<br>
+   　　===========================================<br>
+   　　正常使用该软件您必须保证您的<br>
+   　　服务器满足如下要求： <br>
+      　　1) 软件环境：Apache 1.3.X + PHP 4.2.0 及以上 <br>
+   　　2) 数 据 库：MySQL 3.23.X 及以上<br>
+   　　3) 其 他：服务器必须安装 微软IE浏览器4.0版本以上，推荐IE5.5+<br>
+      [本程序编写环境] <strong>EasyPHP 1.6.0.0</strong> ( 偶懒,没配置环境 ~!~ )<br>
+      <p>2. 系统安装<br>
+        　　===========================================<br>
+        　　1)在支持PHP的服务器上解开本软件包。<br>
+        　　2)将 ./upload 目录下所有文件上传至服务器。首页面地址是：index.php<br>
+        　　3)登录MySQL，建立一个新的数据库，命名任意，如 exblog。<br>
+        　　<font color="#0000FF">BTW:</font>如果你无权限建表,请在config.inc.php中添写ICP给的数据库名<br>
+        　　4)将 ./install/config.inc.php 中相关内容修改为您的信息。 <br>
+        　　<strong>注意：</strong>一定要将数据库的名称改为你刚才新建的名称，如上应为 exblog<br>
+        　　5)在IE地址栏运行 &lt;安装路径&gt;/admin/install.php 按提示进行建表，创建管理员等步骤。<br>
+        　　6)安装完成! 在IE地址栏运行 &lt;安装路径&gt;/admin/login.php 登录后台管理程式。 <br>
+        　　 <br>
+      </p>  </td>
+ </tr>
+ <tr> 
+  <td class="td2">使用协议<a name="3"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <p> 1、exBlog 为免费程序,你可以修改源代码但请保留版权信息.<br>
+个人网站可以免费使用本系统,并可自由传播,传播过程请保持本系统的完整性.<br>
+任何个人或企业未经许可不得将本系统用作商业用途.</p>
+   <p> 2、使用过程中为美化程序或修改BUG您可以对源代码进行修改,如要传播您的修改版本<br>
+  请保留原程序中的 exBlog 版权信息.<br>
+  <br>
+  3、您可以查看 exBlog 的源代码,但在没有获得作者正式许可的情况下,不能以除了<br>
+  美化界面、修改BUG以外的其他任何理由修改 exBlog 的源程序,更不能修改相关<br>
+  说明档和程序显示的版权信息. </p>
+   <p> 4、exBlog 是开放源代码软件,如果您对 exBlog 有好的想法和意见,并希望自己<br>
+  修改 exBlog 完善其功能时,必须与我们取得联系,在获得我们正式的许可后,<br>
+  在完整保留 exBlog 版权信息和说明档的前提下. 对 exBlog 进行修改. </p>
+   <p> 5、本程序欢迎转载,您可以在原样完整保留全部版权信息和说明档的前提下,传播和发布<br>
+  本程序,但将 exBlog 用于商业目的或违背上述条款的传播都是被禁止的. </p>
+   <p> 6、安装 exBlog 建立在完全同意本授权文档的基础之上,因此而产生的纠纷,违反授权<br>
+  协议的一方将承担全部责任.</p>
+      <p> 7、如您想获得技术支持,请EMAIL至<a href="mailto:support@exblog.net">support@exblog.net</a>进行完全免费的注册,注明网站URL<br>
+  在以后过程中如程序有BUG或升级将通过EMAIL通知您.<br>
+   </p></td>
+ </tr>
+ <tr> 
+  <td class="td2">版权声明<a name="5"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <li>本软件为共享软件(shareware)提供个人网站免费使用，可以在使用中修改，但要保留exblog的版权信息； 　 
+   <li>转载，散播请勿删除版权声明；
+   <li>未经许可不得将本系统用于商业用途；
+   <li>如果可能，请在您的网站做上我们的链接，希望能给予合作。谢谢！ 
+  </td>
+ </tr>
+ <tr> 
+  <td class="td2">关于我们<a name="6"></a></td>
+  <td class="td2" align="right"><a href="#">返上</a></td>
+ </tr>
+ <tr> 
+  <td colspan="2"> 
+   <table width="95%" border="0" align=center cellpadding="４" cellspacing="1" bgcolor="#CCCCCC">
+     <tr bgcolor="#FFFFFF">
+       <td height=25 colspan=4 align="center"><b>开发团队 - exSoft</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [项目经理]</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="15%" height=23 align="center"><strong>netxiong</strong></td>
+       <td width="35%">&nbsp;Manager - 01</td>
+       <td width="15%" height=23 align="center"><strong>Viva</strong></td>
+       <td width="35%">&nbsp;Manager - 02</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [代码部] - 招人ing..</b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>elliott</strong></td>
+       <td colspan="3">&nbsp;Coder - 01 负责程序开发、Bugs 修复程序原创作者</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Tomy:</strong></td>
+       <td colspan="3">&nbsp;Coder - 02 负责协助 elliott 完善程序代码，升级文档编写</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Sheer:</strong></td>
+       <td colspan="3">&nbsp;Coder - 03 负责 1.2.0 RC1 及后续版本开发，Bugs修复</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>流水流云:</strong></td>
+       <td colspan="3">&nbsp;Coder - 04 负责程序测试、意见统筹及Bugs修复</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [美工部] - 招人ing.. </b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Hunter</strong></td>
+       <td colspan="3">&nbsp;Skiner - 01 程序原创美工</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>madman</strong></td>
+       <td colspan="3">&nbsp;Skiner - 02 程序现任美工</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [文档部] </b></td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Tomy</strong></td>
+       <td colspan="3">&nbsp;Documenter - 01</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Viva</strong></td>
+       <td colspan="3">&nbsp;Documenter - 02</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td height=23 colspan=4><b>- [测试部]</b>- 欢迎大家加入 exBlog 的 Tester 行列。您的名字将会光荣出现在今后我们的发布版本中</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>流水流云</strong></td>
+       <td colspan="3">&nbsp;Tester - 01</td>
+     </tr>
+     <tr bgcolor="#FFFFFF">
+       <td width="14%" height=23 align="center"><strong>Viva</strong></td>
+       <td colspan="3">&nbsp;Tester - 02</td>
+     </tr>
+   </table>
+   <br>
+   <li>官方网站 <a href="http://www.exblog.net/">http://www.exblog.net/</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.exblog.org/">http://www.exblog.org/</a>
+   <li>官方论坛 <a href="http://bbs.exblog.net/">http://bbs.exblog.net/</a> </td>
+ </tr>
+</table>
+</body>
+</html>

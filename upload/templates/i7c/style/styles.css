@@ -1,0 +1,101 @@
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #99cc00; TEXT-DECORATION: none
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #f1f1f1; FONT-SIZE: 12px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dbdbdb; SCROLLBAR-3DLIGHT-COLOR: #dbdbdb; SCROLLBAR-ARROW-COLOR: #dbdbdb; SCROLLBAR-TRACK-COLOR: #ffffff; BACKGROUND-COLOR: #FFFFFF
+}
+TABLE {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana
+}
+TEXTAREA {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #ffffff
+}
+INPUT {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #ffffff
+}
+acronym{cursor:help;}
+OBJECT {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #ffffff
+}
+.nav {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; FONT-FAMILY: Tahoma, Verdana
+}
+.navtd {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; TEXT-DECORATION: none
+}
+.header {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #eeeeee
+}
+.category {
+	FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #99cc00
+}
+.multi {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana
+}
+.smalltxt {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana
+}
+.mediumtxt {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana
+}
+.bold {
+	FONT-WEIGHT: normal
+}
+.copy {
+	COLOR: #669900; TEXT-DECORATION: none
+}
+.copy:hover {
+	COLOR: #669900; TEXT-DECORATION: underline
+}
+.green {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #99cc00
+}
+.input {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 12px; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../images/input.gif); BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #eeeeee 1px solid
+}
+.input2 {
+	BORDER-RIGHT: #cccccc 2px outset; BORDER-TOP: #cccccc 1px outset; BORDER-LEFT: #cccccc 1px outset; COLOR: #ffffff; BORDER-BOTTOM: #cccccc 2px outset; BACKGROUND-COLOR: #999999
+}
+.input3 {
+	BORDER-RIGHT: #dbdbdb 1px inset; BORDER-TOP: #f5f5f5 2px outset; BORDER-LEFT: #f5f5f5 2px outset; BORDER-BOTTOM: #dbdbdb 1px inset; BACKGROUND-COLOR: #ffffff
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.green2 {
+	FONT-SIZE: 11px; COLOR: #ffffff; BORDER-BOTTOM: #669900 1px solid; FONT-FAMILY: Tahoma, Verdana
+}
+.kuan_all {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; BORDER-BOTTOM: #dbdbdb 1px solid
+}
+.line-height {
+	LINE-HEIGHT: 21px
+}
+.pagenumstatic {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #666666 1px solid; WIDTH: 4em; COLOR: #ffffff; PADDING-TOP: 1px; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffcc00; TEXT-DECORATION: none
+}
+.pagenum A:link {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 4em; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.pagenum A:visited {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 4em; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.pagenum A:active {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 4em; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.pagenum A:hover {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #666666 1px solid; WIDTH: 4em; COLOR: #ffffff; PADDING-TOP: 1px; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffcc00; TEXT-DECORATION: none
+}
+.radio{ color:#000000;background-color:#FFFFFF;}
+
+/*calender style*/
+.daycell{text-align:center;background-color:#FFFFFF;}
+.todaycell{text-align:center;background-color:#DDDDDD;}
+
+li {float:left;	list-style-type: none;}

@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META http-equiv=refresh content=200>
+<title>exBlog QQ look</title>
+<link href="./qqimages/css.css" rel="stylesheet" type="text/css" />
+<SCRIPT> 
+<!-- 
+var limit="10.0:00" 
+if (document.images){ 
+var parselimit=limit.split(":") 
+parselimit=parselimit[0]*60+parselimit[1]*1 
+} 
+function beginrefresh(){ 
+if (!document.images) 
+return 
+if (parselimit==1) 
+window.location.reload() 
+else{ 
+parselimit-=1 
+curmin=Math.floor(parselimit/60) 
+cursec=parselimit%60 
+if (curmin!=0) 
+curtime=curmin+"分"+cursec+"秒后重刷本页！" 
+else 
+curtime=cursec+"秒后重刷本页！" 
+window.status=curtime 
+setTimeout("beginrefresh()",1000) 
+} 
+} 
+window.onload=beginrefresh 
+//--> 
+</SCRIPT>
+<script language="JavaScript" type="text/JavaScript" src="http://im.qq.com/js/checkqqclient.js">
+</script>
+<SCRIPT language=JavaScript type=text/JavaScript>
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</SCRIPT>
+<SCRIPT language="JavaScript">
+function QQver(){ 
+            
+   var xmlhttp=new ActiveXObject("TimwpDll.TimwpCheck");
+   var  n = xmlhttp.GetVersion(); 
+   alert('你的QQ的TimwpDll版本是'+n);
+         }
+function AddPortal (FpanelID)
+{ 
+ var boolFals=IsInstallSupMiniQQ(); 
+ if(boolFals==true)
+ {  
+  if(FpanelID==10003)
+  { 
+   var exe ="Tencent://AddPortal/?Menu=Yes&PanelID="+FpanelID; 
+   }  
+  else
+  { 
+   var exe ="Tencent://AddPortal/?Menu=Yes&PanelID="+FpanelID; 
+   }
+  location.href=exe;    
+  }
+}
+</SCRIPT>
+
+</head>
+
+<body>
+
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" bgcolor="#999999"><div align="right" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold;" title="{title}">Madcn.com</div></td>
+  </tr>
+  <tr>
+    <td width="160" height="20" class="tt"> <img src="./qqimages/tt.gif" width="14" height="9"> Blog 简介 </td>
+  </tr>
+  <tr>
+    <td>
+{blogdescription}
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+<A onclick="AddPortal(20235)" style="cursor:hand" style="color: #CC3366;width: 100%;" title="添加 狂人秀吧! QQ互动门户"><b>→ 一键加入QQ面板 ←</b></a>
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td width="160" height="20" class="tt"> <img src="./qqimages/tt.gif" width="14" height="9"> Blog 信息 </td>
+  </tr>
+  <tr>
+    <td>
+共有Blog：{blogNum}<br>
+共有评论：{reNum}<br>
+共访问数：{visNum}<br>
+今日访问: {todNum}<br>
+注册用户: {userNum}<br>
+在线人数: {onlineUserNum}
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" class="tt"><img src="./qqimages/tt.gif" width="14" height="9"> Blog 分类</td>
+  </tr>
+  <tr>
+    <td>
+<a href="./?play" hideFocus title="回到首页" target="_blank"><img src="./qqimages/arrow.gif" border="0" align="absmiddle">首　　页</a><br>
+{PutColumn}
+<a href="./?play=links" title="疯狂链接" target="_blank"><img src="./qqimages/arrow.gif" border="0" align="absmiddle">友情链接</a><br>
+<a href="./admin/login.php" title="幕后的黑手" target="_blank"><img src="./qqimages/arrow.gif" border="0" align="absmiddle">管　　理</a><br>
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" class="tt"><img src="./qqimages/tt.gif" width="14" height="9"> 最新 Blog</td>
+  </tr>
+  <tr>
+    <td>
+{Putnewblog}
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" class="tt"><img src="./qqimages/tt.gif" width="14" height="9"> 最新 评论</td>
+  </tr>
+  <tr>
+    <td>
+{PutComment}
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td width="160" height="20" class="tt"> <img src="./qqimages/tt.gif" width="14" height="9"> Blog 登陆 </td>
+  </tr>
+  <tr>
+    <td>
+{PutLogin}
+    </td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" class="tt"><img src="./qqimages/tt.gif" width="14" height="9"> 本站 聚合</td>
+  </tr>
+  <tr>
+    <td height="52" align="center"><a href="./rss2.php" target="_blank"><img src="./qqimages/rss20.png" width="80" height="15" border="0" alt="RSS View"></a><br>
+      <a href="./atom.php" target="_blank"><img src="./qqimages/atom03.png" width="80" height="15" border="0" alt="ATOM View"></a><br>
+          <a onclick="window.external.AddChannel('http://www.madcn.com/madcn.cdf');" href="JavaScript:;"><img src="./qqimages/channel.png" width="80" height="15" border="0" alt="狂人秀吧！的频道"></a></td>
+  </tr>
+</table>
+<table width="160" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#DBDBDB" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed; ">
+  <tr>
+    <td height="20" class="tt"><img src="./qqimages/tt.gif" width="14" height="9"> 本站 图标</td>
+  </tr>
+  <tr>
+    <td align="center"> <a href="http://blog.madcn.com" target="_blank"><img src="http://www.madcn.com/blog/bloglogo.gif" border="0" title="小本|延续-狂人秀吧!"></a><br>
+      <a href="http://www.madcn.com" target="_blank"><img src="http://www.madcn.com/madcg/images/logo/logo1.gif" border="0" title="狂人的CG作品集及其它。"></a><br>
+      <a href="http://sjg.madcn.com" target="_blank"><img src="http://www.madcn.com/sjg/images/logo1.gif" border="0" title="狂人=Madman= 的二节棍专门站！"></a> </td>
+  </tr>
+    <tr>
+      <td height="20" align="center" class="tt down"><a href="http://www.exBlog.net" target="_blank"><img src="./qqimages/icon_power.png" width="80" height="15" border="0" alt="exBlog架构"></a></td>
+    </tr>
+    <tr>
+    <td width="160" height="20" align="center" class="tt down">Madcn.com 版权所有</td>
+  </tr>
+</table>
+<script>var style="null";var url="http://www.madcn.com/stat";</script><script type="text/javascript" src="http://www.madcn.com/stat/stat.js"></script>
+</body>
+</html>

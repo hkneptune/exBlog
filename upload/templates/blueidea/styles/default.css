@@ -1,0 +1,247 @@
+/**
+ * Special CSS for bxna(blog.blueidea.com)
+ * @author LeXRus(lexrus@gmail.com)
+ * @version $Id: default.css,v 1.1 2005/03/28 03:29:40 exsoft Exp $
+ */
+
+/* base element *********************************************************/
+#bxna{
+	text-align:left;
+	width:75%;
+	margin:auto;
+	background-color:#ffffff;
+	border:5px solid #eeeeee;
+	overflow:hidden;
+	}
+
+/* head *****************************************************************/
+#header{
+	background-color:#225588;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	}
+	#header #title{
+		font-size:145%;
+		font-family:tahoma,verdana,arial;
+		font-weight:normal;
+		color:#ffffff;
+		margin:9px;
+		}
+	#header #subtitle{
+		font-weight:normal;
+		font-size:70%;
+		font-family:verdana,arial;
+		margin:10px;
+		float:right;
+		margin-top:-23px;
+		color:#ffffff;
+		}
+
+/* navigation ***********************************************************/
+#navigation{
+	padding:5px 10px 7px 10px;
+	background-color:#7788aa;
+	border-bottom:5px solid #ccccdd;
+	}
+	#navigation a{
+		font-size:90%;
+		font-weight:bold;
+		color:#ffffff;
+		text-decoration:none;
+		margin-right:10px;
+		}
+		#navigation a:hover{
+			border-bottom:2px solid #ffffff;
+			}
+	#navigation #search{
+		float:right;
+		}
+		#navigation #search form{
+			margin:0;
+			}
+			#navigation #q{
+				font-size:80%;
+				border-width:1px;
+				font-weight:bold;
+				padding-left:5px;
+				}
+			#navigation .button{
+				font-size:80%;
+				border-width:1px;
+				}
+	#navigation .selected{
+		border-bottom:3px solid #ffffff;
+		}
+
+/* category ********************************************************/
+#category{
+	padding:3px 10px 3px 10px;
+	background-color:#f6f6f6;
+	border-bottom:5px solid #f9f9f9;
+	}
+	#category a{
+		font-size:80%;
+		margin-right:10px;
+		font-weight:bold;
+		color:#333333;
+		text-decoration:none;
+		}
+		#category a:hover{
+			text-decoration:underline;
+			}
+	#category .selected{
+		border-bottom:3px solid #00dd00;
+		}
+
+/* news aggregator *************************************************/
+#aggregator{
+	margin:10px;
+	font-size:100% !important;
+	font-size:98%;
+	}
+	#aggregator .feedCount{
+		display:none;
+		}
+	#aggregator .message{
+		margin:2px;
+		margin-left:26px;
+		margin-bottom:15px;
+		font-size:95%;
+		color:#006699;
+		}
+	#aggregator .news{
+		margin-bottom:20px;
+		}
+		#aggregator .news .title{
+			margin:0;
+			margin-bottom:10px;
+			background-color:#f3f3f3;
+			padding:2px 5px 2px 3px;
+			font-weight:bold;
+			font-size:110%;
+			}
+			#aggregator .news .title a{
+				color:#000099;
+				text-decoration:none;
+				font-size:85%;
+				}
+			#aggregator .news .title a:hover{
+				text-decoration:underline;
+				}
+		#aggregator .news .creator{
+			font-size:75%;
+			width:50px;
+			padding:5px;
+			text-align:center;
+			float:right;
+			clear:both;
+			margin:0 0 5px 5px;
+			border:1px dotted #dddddd;
+			background-color:#ffffff;
+			}
+			#aggregator .news .creator a{
+				text-decoration:none;
+				color:#000000;
+				}
+				#aggregator .news .creator a:hover{
+					text-decoration:underline;
+					}
+			#aggregator .news .creator .name{
+				font-size:70%;
+				display:block;
+				}
+		#aggregator .news .floatLeft{
+			margin:0 13px 0 0;
+			float:left;
+			padding:5px;
+			width:auto;
+			}
+		#aggregator .news .summary{
+			font-size:91%;
+			margin:5px;
+			}
+		#aggregator .news .pubDate{
+			font-size:75%;
+			float:right;
+			padding:4px;
+			color:#999999;
+			margin-top:-32px;
+			}
+		#aggregator .news .related{
+			padding-left:5px;
+			}
+			#aggregator .news .related a{
+				margin-right:10px;
+				color:#999999;
+				font-size:95% !important;
+				font-size:80%;
+				text-decoration:none;
+				}
+				#aggregator .news .related a:hover{
+					text-decoration:underline;
+					}
+#aggregator .blog{
+	}
+	#aggregator .blog{
+		margin-bottom:10px;
+		}
+		#aggregator .blog .title{
+			padding-left:2px;
+			display:block;
+			font-size:90%;
+			}
+			#aggregator .blog a{
+				color:#333366;
+				text-decoration:none;
+				}
+				#aggregator .blog a:hover{
+					text-decoration:underline;
+					}
+		#aggregator .blog dd{
+			margin-left:26px;
+			}
+#aggregator .categoryCaption{
+	display:block;
+	background-color:#f3f3f3;
+	margin-bottom:10px;
+	padding-left:2px;
+	}
+
+/* pager ***********************************************************/
+#pager{
+	margin:15px;
+	margin-bottom:20px;
+	}
+	#pager a{
+		font-size:110%;
+		font-weight;bold; font-weight
+		}
+	#pager .selected{
+		font-weight:bold;
+		}
+
+/* links ***********************************************************/
+#links{
+	padding:5px 10px 7px 10px;
+	background-color:#7788aa;
+	border-top:5px solid #ccccdd;
+	}
+	#links a{
+		font-size:90%;
+		font-weight:bold;
+		color:#ffffff;
+		text-decoration:none;
+		margin-right:10px;
+		}
+		#links a:hover{
+			border-bottom:2px solid #ffffff;
+			}
+
+/* footer **********************************************************/
+#footer{
+	background-color:#225588;
+	padding:10px;
+	font-size:75%;
+	color:#ffffff;
+	border-top:1px solid #ffffff;
+	}

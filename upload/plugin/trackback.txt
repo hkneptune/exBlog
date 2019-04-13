@@ -1,0 +1,40 @@
+#############################################
+# TrackBack 插件
+#
+# Plugin for exBlog (http://www.exBlog.net/)
+# 2005-2-19
+#############################################
+
+原形参考：Nucleus CMS
+
+这个插件是独立的
+放置到blog目录下的 plugin 目录下
+或者直接放 admin 目录下
+
+其实你放到哪里都可以，只是样式表在blog的
+images/style.css
+下，你可以进行修改。
+
+没有用户验证，无须登陆
+
+在 admin/list.php 里加上
+
+<br>
+<table width="99%" border="0" cellspacing="2" cellpadding="1" class="main">
+  <tr> 
+    <td bgcolor="#FFFFFF"> <table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#000000">
+        <tr bgcolor="#99CC66"> 
+          <td class="menu"> <div align="center">插件</div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td colspan="2">
+	<table width="100%" border="0" cellspacing="1" cellpadding="5" bgcolor="#000000" class="main">
+        <tr> 
+          <td bgcolor="#FFFFFF"><div align="center"><a target="mainFrame" href="./../plugin/trackback.php">TrackBack Ping</a>
+            </div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
