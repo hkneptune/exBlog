@@ -1,0 +1,99 @@
+插件安装配置文件语法
+
+
+下边是一个插件安装配置文件实例
+
+[plugin]
+name	= MoFCK
+author	= feeling <feeling@exblog.org>
+version	= V 0.1 <20051102010000>
+licence	= GPL
+manage_url	= /MoFCK/mofck.php
+public_url	= 
+manage_level	= 1
+add_top_menu	= 0
+config_file		= 
+module		= plugin-adm.mofck
+
+[install]
+require_version	= 01050020051201-
+require_file		= file_exists:../images/FCKeditor/fckconfig.js@file_exists:../include/extension.php
+;database_layout	= 
+file_layout		=
+output_licence	= 1
+
+[configure]
+
+
+简介
+配置文件总的来说，分为3个部分: plugin , install 和 configure。其中plugin是一些全局设置，部分参数可能会自动写入配置文件;install是安装时的配置，一般不会写入到配置文件;configure部分是需要写入到配置文件中的内容。写入到配置文件中的内容，在插件中可以用过 $this->_config['plugin'][插件名][参数名]的形式来访问。
+
+
+plugin部分详解
+name			插件名称，将记录到数据库中并在管理菜单（或公共页面顶部菜单）中显示
+author			插件作者，允许使用 feeling <feeling@exblog.org> 这样的格式
+version			插件版本，允许使用 V 0.1 <20051102010000> 这样的格式。其中 V 0.1部分用于在页面上显示，而<20051102010000>用于可能的插件升级
+licence			许可类型，目前支持 GPL, LGPL, BSDL, ASL, MITL, MPL 等6种许可类型。详细内容在/docs 下可以找到
+manage_url		管理端的地址。该地址应该是该插件管理文件的首页，并且其应该为相对于plugins目录的以/开头的URL地址
+public_url		公共访问的地址。该地址应该是该插件公共访问文件的首页，并且其应该为相对于plugins目录的以/开头的URL地址
+manage_level		管理级别限制。 1 = 只允许管理员使用，2=允许管理员和注册用户使用，3=允许任何人使用
+add_top_menu	是否添加到公共访问页面的顶部菜单中，1=是，0=否
+config_file		配置文件保存位置，如果为空则将缺省地保存到插件根目录，并以插件名称(name).conf为文件名 
+module		在系统中注册的插件模块名称。
+			为了规范管理，建议使用plugin-为前缀，如果只是管理端可见，则再加上adm.前缀，否则再加上pub.前缀，最后以小写文件名结尾，如同 plugin-adm.mofck
+
+
+install部分详解
+require_version	= 01050020051201-
+  要求exblog的版本。支持区域指定。例如：
+    01050020051102 表示仅支持 01050020051102 这个版本
+    01050020051102- 表示支持 01050020051102 这个版本以及以后的所有版本
+    -01050020051102 表示支持 01050020051102 这个版本以及以前的所有版本
+    01050020051007-01050020051102 表示支持从 01050020051007 到 01050020051102 的所有版本
+  至于这一个长长的数字串怎么得到的，打开你的install.php文件在第26行
+define("exBlogVer_s", "01050020051102");
+
+  那个数字串就是了。如果你的install.php已经删除了，别急，在/include/config.inc.php中也有： 
+$version['update'] = "01050020051102";
+
+
+require_file	= file_exists:../images/FCKeditor/fckconfig.js@file_exists:../include/extension.php
+  需求文件列表。这个是在安装插件之前检查的时候使用。每一个需求条件使用@分隔。支持的需求条件包括：
+    file_exists:文件位置   检查文件是否存在，如果文件存在则认为通过这条需求检查
+    not_file_exists:文件位置 检查文件是否不存在，如果文件不存在则认为通过这条需求检查
+    dir_exists:目录位置   检查目录是否存在，如果目标存在并且是目录则认为通过这条需求检查
+    not_dir_exists:目录位置 检查目录是否不存在，如果目标存在但不是目录或者目标不存在，都不会通过这条需求检查
+  以上需求条件中的文件位置/目录位置可以使用绝对路径和相对路径。如果使用相对路径，则必须是相对于 /plugins 的位置
+
+database_layout         = 
+  数据库修改规则。每条修改规则使用@分隔。每条修改规则都应该是一条能够正常执行的SQL语句哦。支持的修改规则包括：
+    alter table		修改数据表结构
+    insert		插入新数据
+    update		更新数据
+    delete		删除数据
+    create table	创建数据表
+  另外，在修改规则中你可以使用变量 %%%PREFIX%%% 来指定数据表的前缀。
+
+file_layout	=
+  文件修改规则。用来修改文件，格式如require_file参数。支持的规则包括：
+    mkdir:目录位置	创建目录，如果创建失败会导致安装不能继续
+    rmdir:目录位置	删除目录，如果创建失败会导致安装不能继续
+    rmfile:文件位置	删除文件，如果创建失败会导致安装不能继续
+  以上需求条件中的文件位置/目录位置可以使用绝对路径和相对路径。如果使用相对路径，则必须是相对于 /plugins 的位置
+
+output_licence	= 1
+  是否在安装前首先输出许可协议。1=输出，0=不输出。如果在这里选择了输出协议，但是 plugin 单元中的 licence 为空，则仍然不会输出许可协议。
+
+
+configure单元详解
+  本单元在安装过程中不会影响安装内容，但是会完整保存到配置文件中并在以后的插件使用过程中首先载入。因此请小心使用。
+  例如在本单元有一条：
+  plugin_name   = Access Control List
+
+  那么在以后的插件使用过程中，$this->_config['plugin']['name']['plugin_name'] 就会是 "Access Control List"。
+  但是有一条需要注意，在上边的示例中，用到了plugin_name，而数据库中插件注册表中也有一个字段名为 plugin_name，因此在实际使用过程中，数据库中插件注册表里面登记的 plugin_name 值就会被配置文件中 configure 单元 plugin_name 所覆盖。:(
+
+
+插件安装方法
+  每个插件的安装配置文件都应该名为 install.ini，并保存到对应插件的根目录下。然后在浏览器中访问 /plugins/extension_install.php?name=插件在/plugins目录中的目录名 来根据提示进行安装。
+  请注意大小写！！在Linux/Unix系统中大小写是相关的，如果本应大写而输入为小写，插件安装将会直接返回错误。
