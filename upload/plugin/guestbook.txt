@@ -1,0 +1,30 @@
+#############################################
+# Guestbook 插件
+#
+# Plugin for exBlog (http://www.exBlog.net/)
+# 2005-5-7
+#############################################
+
+只推荐使用 GB2312 编码的用户使用，因为用户名有可能会冲突。
+当然了，如果用户名是英文的话是可以使用的。
+
+你可以在后台修改一些重要配置。
+
+你需要将如下 文件/目录 设置为可写：
+
+   　└plugin
+   　　　└guestbook
+   　    　　├data			这个目录应该可写
+   　    　　│　└message.dat		如果存在并想使用的话，推荐换一个
+    　   　　└guestbook_config.php	为了后台修改
+
+放置到blog目录下的 plugin 目录下
+
+在 admin/list.php 里加上
+
+<a target="mainFrame" href="./../plugin/guestbook.php?action=admin_config">Guestbook</a>
+
+在模板可以添加如下链接
+
+<a href="{exPATH}/plugin/guestbook.php" title="{lang5}">{lang4}</a>
+

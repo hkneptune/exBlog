@@ -1,0 +1,29 @@
+/* slate theme */
+
+#logo {
+	background: #9AAFCB url(../img/blue_top_bg.gif) no-repeat right;
+	}
+#logo span {
+	background: url(../img/triplex_blue.gif) no-repeat;
+	}
+h1, h1 a, h2, code, #comments h3, #home h1, h2 a {
+	color: #930;
+	}
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited {
+	text-decoration: none;
+	color: #930;
+	}
+h1 a:hover, h2 a:hover {
+	color: #330000;
+	}
+code strong {
+	color: #663333;
+	}
+#portthumbs a:hover img {
+	background: #993333;
+	}
+#comments dl dt {
+	color: #993333;
+	}
+	
+

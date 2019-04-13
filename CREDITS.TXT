@@ -1,0 +1,39 @@
+//--- The Start ---//
+
+[代码部] - 招人ing..
+   # elliott	= Coder - 01
+   # Tomy	= Coder - 02
+   # sheer	= Coder - 03
+   # 流水流云	= Coder - 04
+   # Anthrax	= Coder - 05
+
+[美工部] - 招人ing..
+   # Hunter	= Skiner - 01
+   # madman	= Skiner - 02
+
+[文档部]
+   # Tomy	= Documenter - 01
+   # Viva	= Documenter - 02
+
+[测试部] - 欢迎大家加入 exBlog 的 Tester 行列。您的名字将会光荣出现在今后我们的发布版本中
+   # 流水流云
+   # Viva
+   # abcdefg11
+   # md-chinese
+   # Neptune
+   # snk
+   # wolfleader
+   # wrdhl
+   # 都有了
+
+[项目经理]
+   # netxiong	= Manager - 01
+   # Viva	= Manager - 02
+
+//--- 感谢以下为 exBlog 提供建议的朋友们 ---//
+
+   $ skyshui	= 在早期版本中为 exBlog 提供了很多建议
+   $  alpha	= 提供了1.3版本的安装的问题修复
+   $ All	= 感谢所有为 exBlog 提供帮助过的朋友们
+
+//--- The End ---//

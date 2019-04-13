@@ -1,0 +1,148 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                        exBlog 支持UBB代码介绍, 版本 1.3.final
+            CopyRight (c) 2004, The exSoft Team. All rights reserved.
+            Welcome to: http://www.exBlog.net
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+ 写在最前面
+ ^^^^^^^^^^
+ exBlog广泛支持常见UBB代码.但现在网上也有一些比较"独特"UBB代码,这些我们的exBlog虽然支持但不提倡使用.
+ 如果你发现了我们还不支持哪些常见的UBB代码,请您告诉我们,我们会进行考虑的.
+
+###### 列表类标签 ######
+
+普通圆点列表 *推荐
+[list]
+[*]第一项
+[*]第二项
+[*]第三项
+[list]
+
+数字列表
+[list=1]
+[*]第一项
+[*]第二项
+[*]第三项
+[list]
+
+罗马数字列表(大写用"I",小写用"i")
+[list=i]
+[*]第一项
+[*]第二项
+[*]第三项
+[list]
+
+字母列表(大写用"A",小写用"a")
+[list=a]
+[*]第一项
+[*]第二项
+[*]第三项
+[list]
+
+############
+
+###### 字体类标签 ######
+
+[b]加粗[/b] *推荐
+[s]删除线文字[/s]
+[i]斜体文字[/i] *推荐
+[u]下划线文字[/u] *推荐
+[color=red]字体颜色[/color] *推荐
+[sup]上标[/sup]
+[sub]上标[/sub]
+[font=黑体]字体文字[/font] *推荐
+[size=3]文字大小[/size] *推荐
+[fly]飞行文字[/fly]
+[move]飞行文字[/move]
+[left]左对齐文字[/left]
+[center]居中对齐文字[/center]
+[right]右对齐文字[/right]
+[glow=blue]发光文字[/glow]
+[shadow]阴影文字[/shadow]
+[fliph]反转文字[/fliph]
+[flipv]反转文字[/flipv]
+[blur]模糊文字[/blur]
+[dropshadow=blue]阴影文字[/dropshadow]
+[invert]反转文字[/invert]
+[xray]奇怪[/xray]
+[spoiler]spoiler效果字[/spoiler]
+[align=center]选择对齐[/align]
+
+############
+
+###### 引用类标签 ######
+
+[p]换段
+[/p]
+[hr] *推荐
+[pre]文本[/pre]
+[quote]引用[/quote] *推荐
+[code]程序代码[/code]  *推荐
+[html]html代码[/html] *推荐
+[iframe]嵌入框架[/iframe]
+
+############
+
+###### 连接类标签 ######
+
+[url]http://www.exBlog.net[/url] *推荐
+[url=http://www.exBlog.net]点击这里访问我的网页[url] *推荐
+[email]support@exblog.net[/email] *推荐
+[email=support@exblog.net]点击这里给我写信[/email] *推荐
+[img]http://www.madcn.com/madcg/images/logo/logo1.gif[/img] *推荐
+[ed]http://www.exBlog.net[/ed]
+[img=宽,高]http://www.madcn.com/madcg/images/logo/logo1.gif[/img]
+[limg]http://www.madcn.com/madcg/images/logo/logo1.gif[/img]
+[cimg]http://www.madcn.com/madcg/images/logo/logo1.gif[/img]
+[rimg]http://www.madcn.com/madcg/images/logo/logo1.gif[/rimg]
+
+############
+
+###### 媒体类标签 ######
+
+[object编号=宽,高]地址[/object] *推荐
+[swf]http://www.madcn.com/1.swf[/swf] *推荐
+[swf=宽,高]http://www.madcn.com/1.swf[/swf]
+[wma]http://www.madcn.com/1.wma[/wma]音频
+[mp3]http://www.madcn.com/1.mp3[mp3]
+[wmv]地址[/wmv]视频
+[wmv=编号]地址[/wmv]视频
+[ra]地址[/ra]
+[rm]地址[/rm]
+[rm=宽,高]地址[/rm]
+[mov]地址[/mov]
+[dir=宽,高]地址[/dir] shockwave动画
+[music]地址[/music]增强通用标签
+[media]地址[/media]增强通用标签
+[music=编号]地址[/music]增强通用标签
+[media=编号]地址[/media]增强通用标签 支持： mid wav mp3 rm ra ram rpm wmv asf
+
+表现不太好，不要使用：
+
+[mp=宽,高:n]地址[/mp] 媒体播放器 :y :n 控制是否自动播放(未完成)
+[qt=宽,高:y]地址[/qt] quicktime
+[rm=宽,高:y]地址[/rm] real
+
+############
+
+###### 表格类标签 ######
+
+不举例了。
+
+############
+
+###### 自动转换相似地址为链接 ######
+
+ExUbb.inc.php 中查找 $autoaddlink=0; 字段，改为 $autoaddlink=1; 的话，将自动转换相似地址为链接。
+但我们不推荐。
+
+############
+
+ 写在最后面
+ ^^^^^^^^^^
+ 比较"独特"UBB代码,这些我们的exBlog虽然支持但不提倡使用.恩!就是这样.
+
+                                                      exSoft Team
+                                                      2004/12/10
+
+

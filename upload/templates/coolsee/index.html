@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta Name="author" content="exSoft">
+<meta name="keywords" content="exSoft,exBlog,blog,PHP,MySQL">
+<meta name="description" content="exBlog - Powered by exSoft">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<title>{currentSort} {title}</title>
+<link href="{templatesURL}/style/styles.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="{templatesURL}/style/menu.js"></SCRIPT>
+<script language="JavaScript" type="text/javascript" src="include/ex1.js"></script>
+</head>
+
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" bgcolor="#73CA39" background="{templatesURL}/images/coolsee_topback.jpg">
+  <tr> 
+    <td width="380" height="46" ><img src="{templatesURL}/images/icon.gif"></td>
+    <td align="right"><a href="{exPATH}/admin/login.php" class="cn" target="_blank">{lang34}</a> | <a href="{exPATH}/index.php?play=about" class="cn" target="_blank">{lang8}</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="30" bgcolor="#73CA39">
+  <tr> 
+<td valign="top">
+<table height="25" width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="37"><img border="0" src="{templatesURL}/images/coolsee_menu_left.gif"></td>
+    <td align="center" background="{templatesURL}/images/coolsee_menu_bg.gif"><a href="{exPATH}/index.php" class="cn">{lang0}</a></td>
+    <td width="4"><img src="{templatesURL}/images/coolsee_menu_blank.gif" width="4" height="25"></td>
+	{PutColumn}
+    <td align="center" background="{templatesURL}/images/coolsee_menu_bg.gif"><a href="{url_links}" class="cn">{lang6}</a></td>
+    <td width="4"><img src="{templatesURL}/images/coolsee_menu_blank.gif" width="4" height="25"></td>
+  </tr>
+</table>
+<table width="100%" height="23" border="0" cellspacing="0" cellpadding="0" background="{templatesURL}/images/coolsee_bar2web_g1_02.gif">
+  <tr>
+    <td width="132" background="{templatesURL}/images/coolsee_bar2web_g1_01.gif">&nbsp;&nbsp;&nbsp;Welcome</td>
+    <td align="center"><img src="{templatesURL}/images/coolsee_announce.gif" width="17" height="17"></td>
+    <td valign="middle"><marquee width=300 behavior=scroll scrollDelay=80 scrollamount=3 onmouseover=this.stop() onmouseout=this.start()>
+			  	{putAnnounce}
+			  	</marquee></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F1F1F1">
+  <tr>
+    <td width="200" valign="top" bgcolor="#FAFEF5"><img src="{templatesURL}/images/spacer.gif" width="200" height="10"> {PutCalendar} <br>
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_y1_02.gif" bgColor="#fed298"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_y1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang25}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td width="180" height="120" bgColor="#fed298"><table bgColor="#ffffff" width="178" height="119" align="center">
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang26}&nbsp;&nbsp;&nbsp;&nbsp;{blogNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang27}&nbsp;&nbsp;&nbsp;&nbsp;{reNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang28}&nbsp;&nbsp;&nbsp;&nbsp;{tbNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang29}&nbsp;&nbsp;&nbsp;&nbsp;{visNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang30}&nbsp;&nbsp;&nbsp;&nbsp;{todNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang31}&nbsp;&nbsp;&nbsp;&nbsp;{userNum}</td>
+                </tr>
+                <tr>
+                  <td width="10"><img border="0" src="{templatesURL}/images/coolsee_log.gif"></td>
+                  <td>{lang32}&nbsp;&nbsp;&nbsp;&nbsp;{onlineUserNum}</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_r1_02.gif" bgColor="#fba177"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_r1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang93}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td bgColor="#FEDCBF"><table width="178" align="center" bgColor="#ffffff">
+                {Putnewblog}
+              </table>
+                <img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_r1_02.gif" bgColor="#fba177"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_r1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang39}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td bgColor="#FEDCBF"><table width="178" align="center" bgColor="#ffffff">
+                {PutComment}
+              </table>
+                <img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_r1_02.gif" bgColor="#fba177"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_r1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang40}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td bgColor="#FEDCBF"><table width="178" align="center" bgColor="#ffffff">
+                {PutTrackback}
+              </table>
+                <img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_r2_02.gif" bgColor="#F8D9D6"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_r2_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang53}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td bgColor="#F8D9D6"><table align="center" width="178" bgColor="#ffffff">
+                {PutLinks}
+              </table>
+                <img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+          </tr>
+        </table>
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+        <table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="1"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_y1_02.gif" bgColor="#fed298"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_y1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang41}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td width="180" height="120" bgColor="#fed298"><table width="178"  border="0" align="center" cellpadding="0" cellspacing="4" bgcolor="#FFFFFF">
+                <tr>
+                  <td align="center">
+<a href="{exPATH}/rss.php" target="_blank"><img src="{templatesURL}/images/rss10.png" alt="{lang43}" border="0"></a>
+<a href="{exPATH}/rss2.php" target="_blank"><img src="{templatesURL}/images/rss20.png" alt="{lang44}" border="0"></a><br />
+<a href="{exPATH}/atom.php" target="_blank"><img src="{templatesURL}/images/atom03.png" alt="{lang45}" border="0"></a>
+<a href="javascript:window.external.AddChannel('http://www.madcn.com/madcn.cdf');" target="_blank"><img src="{templatesURL}/images/channel.png" alt="{lang46}" border="0"></a><br />
+<a href="{exPATH}/rss2.php?comment=10" target="_blank"><img src="{templatesURL}/images/comment.png" alt="{lang47}" border="0"></a>
+<a href="http://www.exBlog.net/" target="_blank"><img src="{templatesURL}/images/icon_power.png" alt="{lang48}" border="0"></a><br />
+<a href="http://www.php.net/" target="_blank"><img src="{templatesURL}/images/php.png" alt="{lang51}" border="0"></a>
+<a href="http://www.mysql.com/" target="_blank"><img src="{templatesURL}/images/mysql.png" alt="{lang52}" border="0"></a><br />
+</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16">
+<table width="180" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="180" height="23" cellSpacing="0"  cellPadding="0" background="{templatesURL}/images/coolsee_bar2web_s1_02.gif" bgColor="#F1CAF1"><table border="0" cellpadding="0" cellspacing="0" width="132" height="23" background="{templatesURL}/images/coolsee_bar2web_s1_01.gif">
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;{lang36}</td>
+                </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td bgColor="#F1CAF1" align="center" height="59"><table align="center" border="0" cellpadding="0" cellspacing="0" width="178" bgColor="#ffffff">
+                <tr>
+                  <td><br>
+                      <form method="post" action="./?play=search">
+                        <input 
+
+name="keyword" type="text" 
+
+onfocus=this.select() onClick=this.value='' 
+
+onmouseover=this.focus() value="{lang37}" 
+
+size="18" style="border: 1px solid #F1CAF1">
+                        <input name="action" type="submit" 
+
+value="{lang38}" style="border: 1px solid #F1CAF1; padding: 0; background-color: #FFFFFF">
+                    </form></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+        <img src="{templatesURL}/images/spacer.gif" width="1" height="16"> </td>
+    <td width="1" bgcolor="#CCCCCC"><img src="{templatesURL}/images/spacer.gif" width="1" height="1"></td>
+    <td valign="top"><img src="{templatesURL}/images/spacer.gif" height="10">
+{PutBlogs}
+{PutSortBlogs}
+{PutBlogComments_f}
+{PutCommentForm_f}
+{PutLinks2_f}
+{PutSearch_f}
+{PutRegLink}
+{PutAbout}
+{PutPage}
+</td>
+  </tr>
+</table>
+<TABLE cellSpacing=0 cellPadding=6 width="100%" border=0>
+  <TR>
+    <TD><a href="mailto:support@exblog.net">{lang60}</a> | <a href="http://www.exblog.net">{lang61}</a> | <a href="http://www.coolsee.com/book" target="_blank">coolsee.com</a></TD>
+    <TD align="center">{copyright}</TD>
+  </TR>
+</TABLE>
+</body>
+</html>

@@ -1,0 +1,49 @@
+exBlog 1.3.final 发布！
+该版本升级自 exBlog 1.3.1 ，只提供升级版本
+
+升级条件：必须升级自 exBlog 1.3.1 
+升级方法：直接覆盖即可！
+推荐模板：iMsn
+
+   + [修复] 代码的调整
+
+   + [增加] 个性的提示页面模板,请参阅 TemplateBook.txt 相关内容
+   + [增加] 按月归档模板,请参阅 TemplateBook.txt 相关内容
+   + [增加] 关于站长显示,请参阅 TemplateBook.txt 相关内容
+   + [增加] 前台用户列表显示,请参阅 TemplateBook.txt 相关内容
+   + [增加] 更多新鲜东西
+
+下载
+http://www.madcn.com/131-132.cab
+
+exBlog 1.3.1相关：
+http://bbs.exblog.net/read.php?tid=72&fpage=1
+============================================
+关于 按月归档 模板：
+
+1.3.final 相对于 1.3.1 模板修改的地方：
+在 index.html 文件
+	{lang138} 代表 按月归档 四个字
+	{Putpigeonhole} 用来显示按月归档列表
+
+在 b_all.html 文件需要插入类似如下代码：
+<!-- BEGIN RowsPigeonhole -->
+<a href="{url_pigeonhole}">{pigeonhole}</a>
+<!-- END RowsPigeonhole -->
+============================================
+关于 用户列表 and 关于站长 模板：
+在 index.html 文件
+	{PutAbout}
+在 b_all.html 文件需要插入类似如下代码：
+显示关于本人
+<!-- BEGIN RowsAbout -->
+<!-- END RowsAbout -->
+用户列表
+<!-- BEGIN RowsUser -->
+<!-- END RowsUser -->
+用户列表 上层
+<!-- BEGIN RowsUser_f -->
+<!-- END RowsUser_f -->
+
+更细致内容推荐查看 1.3.final捆绑官方iMsn 相应部分。
+

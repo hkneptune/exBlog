@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>exBlog 网络日志(PHP+MYSQL) 1.2.final 版 exUBB 表格 代码使用帮助</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+<!--
+.table1 {  border: #0099cc; border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.td1 {  background-color: #99ccff}
+.td2 {  background-color: #CAE4FF; font-weight: bold; border-color: #000000 black black; border-style: solid; border-top-width: 1px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px}
+table {  font-size: 12px; line-height: 20px}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="600" border="0" align="center" cellspacing="0" cellpadding="4" class="table1">
+  <tr> 
+    <td class="td1" align="center" colspan="2"><b>exBlog 网络日志( PHP+MYSQL ) 1.2.final 
+      版 exUBB 表格 代码使用帮助</b></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 当您在发表评论或后台发布 blog 时可以使用这些 ExUbb 代码让内容更丰富. 
+      <li><a href="#9">表格类标签帮助</a>
+	  <li><a href="#5">联系我们</a> 
+	  </td>
+  </tr>
+  <tr> 
+    <td height="19" class="td2">表格类代码帮助<a name="9"></a></td>
+    <td height="19" class="td2" align="right"><a href="#">返上</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2"> <li><font color="#990000">普通表格</font> [table][tr][td]这是一个普通表格[/td][/tr][/table] 
+        <font color="#990000">效果:</font> <table border><tr><td>这是一个普通表格</td></tr></table>
+      <li><font color="#990000">标题表格</font> [table][tr][th]这是一个标题表格[/th][/tr][/table] <font color="#990000">效果:</font><table border><tr><th>这是一个标题表格</th></tr></table>
+
+      <li><font color="#990000">一个4×4的表格示例</font>
+<br> [table]<br>
+[tr][td]第一个格[/td][td]第二个格[/td][/tr]<br>
+[tr][td]第一个格[/td][td]第一个格[/td][/tr]<br>
+[/table]<br>
+ <font color="#990000">效果:</font>
+<table border>
+<tr><td>第一个格</td><td>第二个格</td></tr>
+<tr><td>第一个格</td><td>第一个格</td></tr>
+</table>
+      <li><font color="#990000">跨多列的表元示例</font><br>
+[table]<br>
+[tr][tdcol=2]我跨了两个列[/td]<br>
+[tr][td]第一个格[/td][td]第二个格[/td]<br>
+[/table]
+<br><font color="#990000">效果:</font> 
+<table border>
+<tr><td colspan=2>我跨了两个列</td>
+<tr><td>第一个格</td><td>第二个格</td>
+</table>
+      <li><font color="#990000">跨多行的表元示例</font><br>
+[table border]<br>
+[tr][tdrow=3]我跨了三行[/td]<br>
+[td]第一行[/td] [td]A[/td][/tr]<br>
+[tr][td]第二行[/td] [td]B[/td][/tr]<br>
+[tr][td]第三行[/td] [td]C[/td][/tr]<br>
+[/table]
+<br><font color="#990000">效果:</font>
+<table border>
+<tr><td rowspan=3>我跨了三行</td>
+        <td>第一行</td> <td>A</td></tr>
+<tr><td>第二行</td> <td>B</td></tr>
+<tr><td>第三行</td> <td>C</td></tr>
+</table>
+
+
+        <font color="#FF0000">一个完整的表格</font> 
+      <li><font color="#990000">表格示例</font><br>
+[table]<br>
+[tr][throw=3] Morning Menu[/th][thcol=3] Morning Menu[/th][/tr]<br>
+[tr][tdrow=2]Food[/td]       [tdcol=2]Drink[/td][/tr]<br>
+[tr][td]B[/td][td]C[/td][/tr]<br>
+[/table]<br>
+
+ <font color="#990000">效果:</font> 
+<table border><tr><th rowspan="3">Morning Menu</th><th colspan=3>Morning Menu</th></tr>
+<tr><td rowspan="2">Food</td> <td colspan=2>Drink</td></tr>
+<tr><td>B</td><td>C</td></tr>
+</table border>
+      <li><font color="#FF0000">提示:表格的使用比较繁琐,一般也用不到.如果你懂得HTML的话,这个就很容易理解了.请保持表格代码的完整,每个表格单元请关闭.应该就不会有太大问题.</font>
+    </td>
+  </tr>
+  <tr> 
+    <td class="td2">联系方法<a name="5" id="5"></a></td>
+    <td class="td2" align="right"><a href="#">返上</a></td>
+  </tr>
+  <tr> 
+    <td colspan="2">如果您对本 BLOG 有什么好的建议或发现 BUG 的话,请提出. Thanks. <br>
+      <br>
+      程序开发：<a href="http://www.exBlog.net" target="_blank">exSoft Team</a><br>
+        网站地址：<a href="http://www.exBlog.net/" target="_blank">http://www.exBlog.net/</a>
+		</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- BEGIN RowsNewblog -->
+<a href="./?play=reply&id={newblogid}" target="_blank"><img src="./qqimages/arrow.gif" border="0">{newblogtitle}</a><br>
+<!-- END RowsNewblog -->
+
+<!-- BEGIN RowsColumn -->
+<a href="./?play=view&sort={sortName}" title="{description}" target="_blank"><img src="./qqimages/arrow.gif" border="0">{column}</a> <a href="./rss2.php?sort={sortName}" target="_blank" title="该栏目RSS" style="color: #CC3366">RSS</a> <a title="该栏目共有 {colblogNum} 篇Blog">[{colblogNum}]</a><br>
+<!-- END RowsColumn -->
+
+<!-- BEGIN RowsComment -->
+    <a href="./?play=reply&id={id}" target="_blank"><img src="./qqimages/arrow.gif" border="0">{comment}</a><br>
+<!-- END RowsComment -->
+
+用户登陆
+<!-- BEGIN RownoLogin -->
+<div align="center">
+<form method="post" action="./index.php" target="_blank">
+用户: <input name="user" type="text" maxlength="20" class="input" size="13"><br />
+密码: <input name="passwd" type="password" maxlength="20" class="input" size="13"><br />
+<input type="hidden" name="action" value="actlogin" />
+<input type="hidden" name="play" value="login" />
+<input type="submit" value="登陆">
+<input type="reset" value="重置">
+</form>
+</div>
+<!-- END RownoLogin -->
+用户登陆成功
+<!-- BEGIN RowLogin -->
+<div align="center">
+<div>
+<a href="{exPATH}/?play=exit" target="_blank">{lang125}</a>
+</div>
+</div>
+<!-- END RowLogin -->

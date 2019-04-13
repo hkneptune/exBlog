@@ -1,0 +1,406 @@
+基本元素:
+
+嵌入页面的公告 {putAnnounce}
+<!-- BEGIN RowsAnnounce -->
+<div class="notice">
+<b>Notice</b><sup>{announceaddtime}</sup>: {announcecontent}
+</div>
+<br />
+<!-- END RowsAnnounce -->
+置顶文章 {PutTopBlogs}
+<!-- BEGIN RowsTopBlog -->
+<div class="entry single">
+	<h1>{isTop}<a href="{url_reply}">{blogTitle}</a></h1>
+
+<div class="weather"><img src="{blogWeather}" alt="Weather" /></div>
+
+	<div id="more">
+<p>{blogContent}</p>
+
+	</div>
+
+<p class="posted">
+Posted by <a href="mailto:{blogEmail}">{blogAuthor}</a> in [{blogSort}] at {blogAddtime}
+<br />
+  {lang97}{viewNum}
+| <a href="{url_reply}#comments">{lang73}{blogVisits}</a>
+| <a href="{url_reply}#trackbacks">{lang74}{TrackbackNum}</a>
+| <a href="http://www.google.com/search?q={blogTitle_ed}" target="_blank" title="Only UTF-8 !">Search in Google</a>
+</p>
+
+</div>
+<!-- END RowsTopBlog -->
+文章摘要显示时的嵌入模板，重要 {PutBlogs}
+<!-- BEGIN RowsBlog -->
+<div class="entry single">
+	<h1><a href="{url_reply}">{blogTitle}</a></h1>
+
+<div class="weather"><img src="{blogWeather}" alt="Weather" /></div>
+
+	<div id="more">
+<p>{blogContent}</p>
+
+	</div>
+
+<p class="posted">
+Posted by <a href="mailto:{blogEmail}">{blogAuthor}</a> in [{blogSort}] at {blogAddtime}
+<br />
+  {lang97}{viewNum}
+| <a href="{url_reply}#comments">{lang73}{blogVisits}</a>
+| <a href="{url_reply}#trackbacks">{lang74}{TrackbackNum}</a>
+| <a href="http://www.google.com/search?q={blogTitle_ed}" target="_blank" title="Only UTF-8 !">Search in Google</a>
+</p>
+
+</div>
+<!-- END RowsBlog -->
+阅读文章显示时的模板，重要！！可以与上面的相同。同用 {PutBlogs}
+<!-- BEGIN RowsBlog_show -->
+<div class="entry single">
+	<h1>{blogTitle}</h1>
+
+<div class="weather"><img src="{blogWeather}" alt="Weather" /></div>
+
+	<div id="more">
+<p>{blogContent}</p>
+
+	</div>
+
+<p class="posted">
+Posted by <a href="mailto:{blogEmail}">{blogAuthor}</a> in [{blogSort}] at {blogAddtime}
+<br />
+  {lang97}{viewNum}
+| <a href="#comments">{lang73}{blogVisits}</a>
+| <a href="#trackbacks">{lang74}{TrackbackNum}</a>
+| <a href="http://www.google.com/search?q={blogTitle_ed}" target="_blank" title="Only UTF-8 !">Search in Google</a>
+</p>
+
+</div>
+<!-- END RowsBlog_show -->
+日历 {PutCalendar}
+<!-- BEGIN RowCalendar -->
+<table border="0" cellpadding="0" cellspacing="1" width="90%">
+  <tr>
+    <td width="748" colspan="35" id="caltitle" bgcolor="#ffffff">
+    
+    {currentYearMonth} 
+    <a href="{url_prevmonth}" title="{lang120}">&lt;&lt;</a>
+ MONTH 
+<a href="{url_nextmonth}" title="{lang121}">&gt;&gt;</a>
+    <a href="{url_prevyear}" title="{lang122}">&lt;&lt;</a>
+ YEAR 
+<a href="{url_nextyear}" title="{lang123}">&gt;&gt;</a>
+    
+    </td>
+  </tr>
+  <tr>
+
+{today}
+
+  </tr>
+</table>
+<!-- END RowCalendar -->
+分类导航 {PutColumn}
+<!-- BEGIN RowsColumn -->
+<li>
+<a href="{url_sort}" title="{description}">{column} <span style="color: #CC3366" title="{lang109}
+{siteUrl}/rss2.php?sort={sortName}">RSS</span> <span title="{lang110} {colblogNum} {lang111}">[{colblogNum}]</span></a>
+</li>
+<!-- END RowsColumn -->
+翻页
+<!-- BEGIN RowPage -->
+<div id="pager">
+<a href="#">{lang10}<font color="#FF0000">{curPage}</font>{lang11}</a>
+<a href="#">{lang12}<font color="#FF0000">{totalPage}</font>{lang13}</a>
+<a href="{url_prevpage}">{lang14}</a>
+<a href="{url_nextpage}">{lang15}</a>
+<a href="{url_firstpage}">{lang16}</a>
+<a href="{url_totalpage}">{lang17}</a>
+</div>
+<!-- END RowPage -->
+用户登陆
+<!-- BEGIN RownoLogin -->
+<form method="post" action="{exPATH}/index.php">
+<fieldset>
+{lang126} <input name="user" type="text" maxlength="20" class="input" size="13" /><br />
+{lang127} <input name="passwd" type="password" maxlength="20" class="input" size="13" /><br />
+<input type="hidden" name="action" value="actlogin" />
+<input type="hidden" name="play" value="login" />
+<input type="submit" value="{lang128}" class="botton" />
+<input type="reset" value="{lang129}" class="botton" />
+</fieldset>
+</form>
+<!-- END RownoLogin -->
+用户登陆成功
+<!-- BEGIN RowLogin -->
+<div class="gong">
+<div>
+<a href="{exPATH}/index.php?play=exit">{lang125}</a>
+</div>
+</div>
+<!-- END RowLogin -->
+
+
+侧栏相关:
+
+最新评论列表 {PutComment}
+<!-- BEGIN RowsComment -->
+<li>
+:.<a href="{url_reply}#comment{comid}">{comment}</a>
+</li>
+<!-- END RowsComment -->
+友情链接列表 {PutLinks}
+<!-- BEGIN RowsLinks -->
+<li>
+<a href="{exPATH}/index.php?play=links&amp;action=GoTo&amp;id={id}&amp;url={url}" title="{description}" target="_blank">{homepage}</a> ({visits})
+</li>
+<!-- END RowsLinks -->
+新文章列表 {Putnewblog}
+<!-- BEGIN RowsNewblog -->
+<li>
+:.<a href="{url_reply}">{newblogtitle}</a>
+</li>
+<!-- END RowsNewblog -->
+最新引用列表 {PutTrackback}
+<!-- BEGIN RowsTrackback -->
+<li>
+:.<a href="{url_reply}#trackback{tbid}">{trackback}</a>
+</li>
+<!-- END RowsTrackback -->
+按月归档 {Putpigeonhole}
+<!-- BEGIN RowsPigeonhole -->
+<li>
+:.<a href="{url_pigeonhole}">{pigeonhole}</a>
+</li>
+<!-- END RowsPigeonhole -->
+
+
+
+文章阅读相关:
+
+文章关键词显示 上级包装 可以省略 {PutBlogKeywords_f}
+<!-- BEGIN RowsKeywords_f -->
+<h3 id="trackbacks">Trackback Pings</h3>
+<p class="techstuff">TrackBack URL for this entry:<br />
+<div class="box">{siteUrl}/extb.php?id={blogID}</div></p>
+
+<p>Listed below are links to weblogs that reference <a href="{siteUrl}/{url_reply}">{blogTitle}</a>:</p>
+
+
+<div id="comments">
+
+<h3 id="chead">KeyWords</h3>
+<dl>
+
+<dt><img src="{templatesURL}/img/permalink.gif" alt="comment1" border="0" /> <strong>KeyWords</strong></dt>
+{PutBlogKeywords}
+
+</dl>
+<!-- END RowsKeywords_f -->
+文章关键词显示 内容 可直接使用 {PutBlogKeywords}
+<!-- BEGIN RowsKeywords -->
+<!-- Blog关键词 -->
+<dd><p>{blogKeyword},{sitekeyword}</p></dd>
+<!-- END RowsKeywords -->
+
+评论显示 上级包装 可以省略 {PutBlogComments_f}
+<!-- BEGIN RowsReply_f -->
+<h3 id="chead">{blogVisits} Comments</h3>
+<dl>
+
+{PutBlogComments}
+
+</dl>
+<!-- END RowsReply_f -->
+评论显示 内容 可直接使用 {PutBlogComments}
+<!-- BEGIN RowsReply -->
+<dt id="comment{comid}"><a name="#comments{comid}" title="Link to this comment"><img src="{templatesURL}/img/comment_on.gif" alt="comment{comid}" border="0" /></a> <strong>{compid}.</strong> On {reAddtime}, <a href="mailto:{reEmail}">{reAuthor}</a> <a href="{homepage}"><img src="{templatesURL}/img/homepage.gif" alt="Your HomePage" width="15" height="12" /></a> <a href="http://search.tencent.com/cgi-bin/friend/user_show_info?ln={qq}" target="_blank"><img src="{templatesURL}/img/QQ.gif" alt="Your QQ" width="15" height="12" /></a>  said:</dt>
+<dd><p>{reContent}</p></dd>
+<!-- END RowsReply -->
+
+引用显示 上级包装 可以省略 {PutBlogTrackbacks_f}
+<!-- BEGIN RowsTb_f -->
+<h3 id="chead">{TrackbackNum} Trackbacks</h3>
+<dl>
+
+{PutBlogTrackbacks}
+
+</dl>
+<!-- END RowsTb_f -->
+引用显示 内容 可直接使用 {PutBlogTrackbacks}
+<!-- BEGIN RowsTb -->
+<dt id="trackback{tbid}"><a name="#trackbacks{tbid}" title="Link to this comment"><img src="{templatesURL}/img/permalink.gif" alt="trackback{tbid}" border="0" /></a> <strong>{tbpid}.</strong> <a href="{tburl}">{tbtitle}</a> from {tbblog_name}<br /> Tracked on {tbaddtime}</dt>
+<dd><p>{tbexcerpt}<a href="{tburl}">[Read More]</a></p></dd>
+<!-- END RowsTb -->
+
+回复表单 上级包装 可以省略 {PutCommentForm_f}
+<!-- BEGIN RowsReplayform_f -->
+<a name="post"></a>
+<h3 id="add-com">Post a comment</h3>
+{PutCommentForm}
+</div>
+<!-- END RowsReplayform_f -->
+回复表单 内容 可直接使用 {PutCommentForm}
+<!-- BEGIN RowsReplayform -->
+<form name="exEdit" method="post" action="{exPATH}/index.php">
+<dl>
+<dt>
+
+<input type="hidden" name="id" value="{currentID}" />
+<a href="{templatesURL}/helper/exUbbHelp.htm" target="_blank">{lang83}</a><br />
+
+{PutLogincom}
+
+<br />
+<textarea name="content" cols="58" rows="5"></textarea>
+<br />
+<input type="hidden" name="do" value="add_replay" />
+<input type="hidden" name="play" value="reply" />
+<input type="hidden" name="tag" value="true" />
+<input type="submit" name="action" value="{lang91}" />
+
+</dt>
+</dl>
+</form>
+<!-- END RowsReplayform -->
+
+<!-- BEGIN RownoLogincom -->
+<img src="{templatesURL}/img/nick.gif" alt="Your Name" /> {lang84}
+<input name="name" type="text" id="author" size="20" />
+
+<font color="#FF0000">*</font> {lang85} 
+<input name="password" type="password" size="15" /> <br />
+
+<img src="{templatesURL}/img/mail.gif" alt="Your E-mail" /> {lang86}
+<input name="email" type="text" size="20" />
+<input type="checkbox" name="register" value="yes" /> {lang87}<br />
+
+<img src="{templatesURL}/img/homepage.gif" alt="Your HomePage" /> {lang88}
+<input name="homepage" type="text" size="30" /> {lang89} <br />
+
+<img src="{templatesURL}/img/QQ.gif" alt="Your QQ" /> {lang90}
+<input name="qq" type="text" size="12" /> <br />
+<!-- END RownoLogincom -->
+
+<!-- BEGIN RowLogincom -->
+<img src="{templatesURL}/img/nick.gif" alt="Your Name" /> {lang84} <font color="#FF0000">{exBlogUserid}</font> {lang124}<br />
+<!-- END RowLogincom -->
+
+
+其他相关:
+
+附件
+<!-- BEGIN RowsAttach -->
+ 
+<!-- END RowsAttach -->
+
+搜索文章列表
+<!-- BEGIN RowsKeyword_f -->
+<table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+        {PutSearch}
+</table>
+<!-- END RowsKeyword_f -->
+<!-- BEGIN RowsKeyword -->
+<li>
+&nbsp;- <a href="{exPATH}/index.php?play=search&amp;make=view&amp;id={keyID}&amp;key={keyword}" target="_blank">{keyTitle}</a> {lang97} {visits} 
+</li>
+<!-- END RowsKeyword -->
+友情链接页面列表
+<!-- BEGIN Rows2Links_f -->
+<table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+        {PutLinks2}
+</table>
+<!-- END Rows2Links_f -->
+<!-- BEGIN Rows2Links -->
+  <tr> 
+    <td width="25%" height="20">&nbsp;{homepage}</td>
+  <td width="30%"><a href="{exPATH}/index.php?play=links&amp;action=GoTo&amp;id={id}&amp;url={url}" title="{description}" target="_blank">{logoURL}</td>
+  <td width="45%"><a href="{exPATH}/index.php?play=links&amp;action=GoTo&amp;id={id}&amp;url={url}" title="{description}" target="_blank">{url}</a>&nbsp;&nbsp;[{visits}] </td>
+  </tr>
+<!-- END Rows2Links -->
+友情申请表单
+<!-- BEGIN RowsReglink -->
+<form method="post" action="{exPATH}/index.php?play=regLink">
+  <table width="500" border="0" align="center" cellpadding="0" cellspacing="2">
+    <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td width="20%">&nbsp; {lang101}</td>
+    <td width="80%"> <input name="webTitle" type="text" size="40" /> 
+      <font color="#FF0000">*</font> </td>
+  </tr>
+  <tr> 
+    <td>&nbsp; {lang102}</td>
+    <td><input name="webUrl" type="text" size="40" /> <font color="#FF0000">*</font> 
+      {lang89} </td>
+  </tr>
+  <tr> 
+    <td>&nbsp; {lang103}</td>
+    <td><input name="webLogo" type="text" size="40" />
+      {lang89} </td>
+  </tr>
+  <tr> 
+    <td valign="top">&nbsp; {lang104}</td>
+    <td><textarea name="webDescription" cols="60" rows="5"></textarea> 
+    </td>
+  </tr>
+  <tr> 
+    <td height="35" colspan="2">
+<div align="center"> 
+<input type="hidden" name="action" value="actreglink" />
+<input type="hidden" name="play" value="regLink" />
+        <input type="submit" value="{lang91}" />
+      </div></td>
+  </tr>
+</table>
+</form>
+<!-- END RowsReglink -->
+
+显示关于本人
+<!-- BEGIN RowsAbout -->
+<table width="92%" border="0" align="center" cellpadding="6" cellspacing="0" style="WORD-BREAK: break-all; WORD-WRAP: break-word">
+<tr> 
+ <td class="blogtitle" height="20">{lang139}</td>
+</tr>
+<tr> 
+    <td class="blogcontent">
+	<b>Webmaster: </b>
+	{name}<br />
+	<b>QQ: </b>
+	<a href="http://search.tencent.com/cgi-bin/friend/user_show_info?ln={qq}" target="_blank">{qq}</a><br />
+	<b>ICQ: </b>
+	{icq}<br />
+	<b>MSN: </b>
+	{msn}<br />
+	<b>E-mail: </b>
+	<a href="mailto:{Webmasteremail}">{Webmasteremail}</a><br />
+	<b>HomePage: </b>
+	<a href="{siteUrl}" target="_blank">{siteUrl}</a><br />
+	<b>Description: </b>
+	{Webmasterdescription}
+	<br>
+    </td>
+</tr>
+</table>
+<!-- END RowsAbout -->
+用户列表
+<!-- BEGIN RowsUser -->
+  <tr class="line{lineno}"> 
+  <td>
+[{pass}] 
+<a href="mailto:{email}" title="{lang141}{name}{lang142}"><img src="{templatesURL}/images/mail.gif" border="0" /></a> 
+<a href="http://search.tencent.com/cgi-bin/friend/user_show_info?ln={qq}" target="_blank"><img src="{templatesURL}/images/QQ.gif" border="0" /></a> 
+<a href="{homepage}" title="{lang143}{name}{lang144}" target="_blank"><img src="{templatesURL}/images/homepage.gif" border="0" /></a> 
+<img src="{templatesURL}/images/nick.gif" border="0" /> {name} 
+  </td>
+  </tr>
+<!-- END RowsUser -->
+用户列表 上层
+<!-- BEGIN RowsUser_f -->
+<table width="92%" border="0" align="center" cellpadding="6" cellspacing="0" style="WORD-BREAK: break-all; WORD-WRAP: break-word">
+<tr> 
+ <td class="blogtitle" height="20">{lang140}</td>
+</tr>
+{PutAbout_list}
+</table>
+<!-- END RowsUser_f -->
