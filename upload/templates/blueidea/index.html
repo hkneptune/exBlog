@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{langlanguage}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="{langlanguage}" />
+<meta name="generator" content="http://www.exBlog.net/" />
+<meta content="all" name="robots" />
+<meta name="author" content="{Webmastername} {Webmaster}" />
+<meta name="Copyright" content="exBlog" />
+<meta name="keywords" content="{blogKeyword},{sitekeyword}" />
+<meta name="description" content="{sitedescription}" />
+<link rel="alternate" type="application/rss+xml" href="{siteUrl}/rss2.php" title="{title}" />
+<link rel="alternate" type="application/rss+xml" href="{siteUrl}/atom.php" title="{title}" />
+<link rel="icon" href="{exPATH}/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{exPATH}/favicon.ico" type="image/x-icon" />
+<title>{currentSort} {title}</title>
+<style type="text/css" title="exBlog">@import "{templatesURL}/styles/css.css";</style>
+<script type="text/javascript" src="{exPATH}/include/ex1.js"></script>
+<script type="text/javascript" src="{templatesURL}/js/editor.js"></script>
+</head>
+
+<body dir="{langdir}">
+
+<!-- main begin -->
+<div id="bxna">
+
+<!-- blog title -->
+<div id="header">
+<h1 id="title">{title}</h1>
+<sup id="subtitle">Let us exBlog! Go! Go! Go!</sup>
+</div>
+
+<!-- navigation begin -->
+<form id="navigation" method="post" action="{exPATH}/index.php">
+<a href="{exPATH}/index.php" accesskey="1" title="{lang1}">{lang0}</a>
+<a href="#" title="{lang5}">{lang4}</a>
+<a href="{url_links}" title="{lang7}">{lang6}</a>
+<a href="#" title="{lang9}">{lang8}</a>
+<a href="{exPATH}/admin/login.php" target="_blank" title="{lang35}">{lang34}</a>
+<span class="searchform">
+<a>{lang36} 
+<input name="keyword" type="text" onfocus="this.select()" onclick="this.value=''" onmouseover="this.focus()" value="{lang37}" size="14" class="q" />
+<input type="submit" value="{lang38}" class="botton" /><input type="hidden" name="play" value="search" />
+</a>
+</span>
+</form>
+<!-- navigation end -->
+
+<div class="feedCount">
+{lang26}{blogNum} {lang27}{reNum} {lang28}{tbNum} {lang29}{visNum} {lang30}{todNum} {lang31}{userNum} {lang32}{onlineUserNum}
+</div>
+<!-- Column begin -->
+<p id="category">
+{PutColumn}
+</p>
+<!-- Column end -->
+
+<div id="aggregator">
+
+<!-- logo begin -->
+<div class="logolist">
+<a href="{exPATH}/rss.php" target="_blank"><img src="{templatesURL}/images/rss10.png" alt="{lang43}" border="0" /></a>
+<a href="{exPATH}/rss2.php" target="_blank"><img src="{templatesURL}/images/rss20.png" alt="{lang44}" border="0" /></a>
+<a href="{exPATH}/atom.php" target="_blank"><img src="{templatesURL}/images/atom03.png" alt="{lang45}" border="0" /></a>
+<a href="javascript:window.external.AddChannel('http://www.madcn.com/madcn.cdf');" target="_blank"><img src="{templatesURL}/images/channel.png" alt="{lang46}" border="0" /></a>
+<a href="{exPATH}/rss2.php?comment=10" target="_blank"><img src="{templatesURL}/images/comment.png" alt="{lang47}" border="0" /></a>
+<a href="http://www.exBlog.net/" target="_blank"><img src="{templatesURL}/images/icon_power.png" alt="{lang48}" border="0" /></a>
+<a href="http://www.creativecommons.cn/licenses/by-sa/1.0/" target="_blank"><img src="{templatesURL}/images/cc.png" alt="{lang49}" border="0" /></a>
+<img src="{templatesURL}/images/gb2312.gif" alt="{lang50}GB2312" border="0" />
+</div>
+<!-- logo end -->
+
+<h3 class="caption">exBlog News</h3>
+
+<!-- blog begin -->
+<br />
+{putAnnounce}
+{PutTopBlogs}
+{PutBlogs}
+{PutSortBlogs}
+{PutBlogKeywords_f}
+{PutBlogTrackbacks_f}
+{PutBlogComments_f}
+{PutCommentForm_f}
+{PutLinks2_f}
+{PutSearch_f}
+{PutRegLink}
+<!-- blog end -->
+
+</div>
+
+<!-- BlogPage begin -->
+{PutPage}
+<!-- BlogPage end -->
+
+<div id="ot">
+<!-- Calendar begin -->
+
+<div id="cal">
+
+{PutCalendar}
+
+</div>
+
+<!-- Calendar end -->
+
+<br />
+
+
+</div>
+
+<!-- list begin -->
+<div id="listhr">
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="250" valign="top">
+
+    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+      <tr>
+        <td class="listtit">{lang93}</td>
+      </tr>
+      <tr>
+        <td class="listcon">
+        
+        <ul class="list">
+		{Putnewblog}
+		</ul>
+        
+        </td>
+      </tr>
+    </table>
+
+    </td>
+    <td width="250" valign="top">
+
+    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+      <tr>
+        <td class="listtit">{lang39}</td>
+      </tr>
+      <tr>
+        <td class="listcon">
+        
+        <ul class="list">
+		{PutComment}
+		</ul>
+        
+        </td>
+      </tr>
+    </table>
+
+    </td>
+    <td width="250" valign="top">
+
+    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+      <tr>
+        <td class="listtit">{lang40}</td>
+      </tr>
+      <tr>
+        <td class="listcon">
+        
+        <ul class="list">
+		{PutTrackback}
+		</ul>
+        
+        </td>
+      </tr>
+    </table>
+
+    </td>
+  </tr>
+</table>
+</div>
+<!-- list end -->
+
+<p id="pagedown">
+&nbsp;
+</p>
+
+<p id="links">
+<strong class="caption">Links:</strong>
+<a href="http://www.exBlog.net" target="_blank"><acronym title="exBlog.Net">exBlog</acronym></a>
+<a href="http://www.madcn.com" target="_blank">MadCN</a>
+<a href="http://blog.blueidea.com" target="_blank">BlueIdea</a>
+</p>
+
+<div id="footer">
+
+<div id="copyright">{copyright}</div>
+
+<div id="powered">
+
+Powered by <acronym title="exBlog.Net">exBlog</acronym> 
+
+Template: blog.blueidea.com 
+
+Validator: 
+<a 
+href="http://validator.w3.org/check/referer" rel="external" target="_blank" title="Validates this page">XHTML1.0</a> 
+<a 
+href="http://jigsaw.w3.org/css-validator/validator?uri={siteUrl}" rel="external" target="_blank" title="Validates the CSS of this page">CSS2.0</a>
+
+</div>
+
+</div>
+</div>
+
+
+</body>
+</html>

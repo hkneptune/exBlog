@@ -1,0 +1,407 @@
+基本元素:
+
+嵌入页面的公告 {putAnnounce}
+<!-- BEGIN RowsAnnounce -->
+·<a href="#" onclick="window.open('{url_announce}', 'newwindow', 'height=400, width=500, top=100,left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')" class="G">{announcetitle}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- END RowsAnnounce -->
+置顶文章 {PutTopBlogs}
+<!-- BEGIN RowsTopBlog -->
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed;">
+  <tr>
+    <td width="100%" height="25" colspan="2" background="{templatesURL}/images/coolsee_table_back_l.gif" bgcolor="#F4FDF1">
+     <table width="400" height="25" valign="middle" border="0" cellpadding="0" cellspacing="0" background="{templatesURL}/images/coolsee_table_back_l.gif">
+<tr>
+<td background="{templatesURL}/images/coolsee_table_back.gif">&nbsp;&nbsp;{isTop}<b>{blogTitle}</b>
+</td>
+</tr>
+</table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="blogcontent">{blogContent}<br><br>
+	</td>
+  </tr>
+  <tr>
+    <td class="blogother" colspan="2">{lang71} <a href="mailto:{blogEmail}" class="cn">{blogAuthor}</a> 
+                          {lang72} [{blogSort}] | <a href="{url_reply}" class="cn">{lang73}{blogVisits}</a> 
+                          | {lang97}{viewNum} | <a href="{url_reply}" class="cn">{lang108}
+                          </a></td>
+  </tr>
+</table>
+<!-- END RowsTopBlog -->
+文章摘要显示时的嵌入模板，重要 {PutBlogs}
+<!-- BEGIN RowsBlog -->
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed;">
+  <tr>
+    <td width="100%" height="25" colspan="2" background="{templatesURL}/images/coolsee_table_back_l.gif" bgcolor="#F4FDF1">
+     <table width="400" height="25" valign="middle" border="0" cellpadding="0" cellspacing="0" background="{templatesURL}/images/coolsee_table_back_l.gif">
+<tr>
+<td background="{templatesURL}/images/coolsee_table_back.gif">&nbsp;&nbsp;<b>{blogTitle}</b>
+</td>
+</tr>
+</table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="blogcontent">{blogContent}<br><br>
+	</td>
+  </tr>
+  <tr>
+    <td class="blogother" colspan="2">{lang71} <a href="mailto:{blogEmail}" class="cn">{blogAuthor}</a> 
+                          {lang72} [{blogSort}] | <a href="{url_reply}" class="cn">{lang73}{blogVisits}</a> 
+                          | {lang97}{viewNum} | <a href="{url_reply}" class="cn">{lang108}
+                          </a></td>
+  </tr>
+</table>
+<!-- END RowsBlog -->
+阅读文章显示时的模板，重要！！可以与上面的相同。同用 {PutBlogs}
+<!-- BEGIN RowsBlog_show -->
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed;">
+  <tr>
+    <td width="100%" height="25" colspan="2" background="{templatesURL}/images/coolsee_table_back_l.gif" bgcolor="#F4FDF1">
+     <table width="400" height="25" valign="middle" border="0" cellpadding="0" cellspacing="0" background="{templatesURL}/images/coolsee_table_back_l.gif">
+<tr>
+<td background="{templatesURL}/images/coolsee_table_back.gif">&nbsp;&nbsp;<b>{blogTitle}</b>
+</td>
+</tr>
+</table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="blogcontent">{blogContent}<br><br>
+	</td>
+  </tr>
+  <tr>
+    <td class="blogother" colspan="2">{lang71} <a href="mailto:{blogEmail}" class="cn">{blogAuthor}</a> 
+                          {lang72} [{blogSort}] | <a href="{url_reply}" class="cn">{lang73}{blogVisits}</a> 
+                          | {lang97}{viewNum} | <a href="{url_reply}" class="cn">{lang108}
+                          </a></td>
+  </tr>
+</table>
+<!-- END RowsBlog_show -->
+日历 {PutCalendar}
+<!-- BEGIN RowCalendar -->
+<table width="180" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td id="caltitle">{currentYearMonth}</td>
+  </tr>
+</table>
+<table width="180" border="0" align="center" cellpadding="4" cellspacing="1">
+  <tr id="weekcell"> 
+    <td class="style1">{lang113}</td>
+    <td>{lang114}</td>
+    <td>{lang115}</td>
+    <td>{lang116}</td>
+    <td>{lang117}</td>
+    <td>{lang118}</td>
+    <td class="style1">{lang119}</td>
+  </tr>
+  <tr>
+	{today}
+  </tr>
+</table>
+<table width="180" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" class="calfooter">
+
+<a href="{url_prevmonth}">
+<SPAN 
+                  class=arrow>3</SPAN></a>
+ MONTH 
+<a href="{url_nextmonth}">
+<SPAN 
+                  class=arrow>4</SPAN></a> 
+<a href="{url_prevyear}">
+<SPAN 
+                  class=arrow>3</SPAN></a>
+ YEAR 
+<a href="{url_nextyear}">
+<SPAN 
+                  class=arrow>4</SPAN></a>
+
+    </td>
+  </tr>
+</table>
+<!-- END RowCalendar -->
+分类导航 {PutColumn}
+<!-- BEGIN RowsColumn -->
+<td align="center" background="{templatesURL}/images/coolsee_menu_bg.gif"><a href="{exPATH}/index.php?play=view&sort={sortName}" title="{description}"  class="cn">{column}</a></td>
+    <td width="4"><img src="{templatesURL}/images/coolsee_menu_blank.gif" width="4" height="25"></td>
+<!-- END RowsColumn -->
+翻页
+<!-- BEGIN RowPage -->
+      <table width="92%" border="0" align="center" cellpadding="10" cellspacing="0">
+        <tr>
+          <td class="blogother">第<font color="#FF0000">{curPage}</font>页,共<font color="#FF0000">{totalPage}</font>页 <a href="./?play=view&sort={sortName}" class="cn">首页</a> <a href="./?play=view&sort={sortName}&page={prev_page}" class="cn">上页</a> <a href="./?play=view&sort={sortName}&page={next_page}" class="cn">下页</a> <a href="./?play=view&sort={sortName}&page={total_page}" class="cn">末页</a></td>
+        </tr>
+    </table>
+<!-- END RowPage -->
+用户登陆
+<!-- BEGIN RownoLogin -->
+<form method="post" action="{exPATH}/?play=login">
+<fieldset>
+{lang126} <input name="user" type="text" maxlength="20" class="input" size="13"><br />
+{lang127} <input name="passwd" type="password" maxlength="20" class="input" size="13"><br />
+<input type="hidden" name="action" value="actlogin">
+<input type="submit" value="{lang128}" class="botton">
+<input type="reset" value="{lang129}" class="botton">
+</fieldset>
+</form>
+<!-- END RownoLogin -->
+用户登陆成功
+<!-- BEGIN RowLogin -->
+<div class="gong">
+<div>
+<a href="{exPATH}/?play=exit">{lang125}</a>
+</div>
+</div>
+<!-- END RowLogin -->
+
+
+侧栏相关:
+
+最新评论列表 {PutComment}
+<!-- BEGIN RowsComment -->
+  <tr>
+    <td>
+    <a href="{url_reply}" class="cn"><img src="{templatesURL}/images/coolsee_arrow.gif" border="0" align="absmiddle">{comment}</a>
+    </td>
+  </tr>
+<!-- END RowsComment -->
+友情链接列表 {PutLinks}
+<!-- BEGIN RowsLinks -->
+  <tr>
+    <td>
+    <a href="{exPATH}/index.php?play=links&action=GoTo&id={id}&url={url}" class="cn" title="{description}" target="_blank"><img src="{templatesURL}/images/coolsee_arrow.gif" border="0" align="absmiddle">{homepage}</a>
+    </td>
+  </tr>
+<!-- END RowsLinks -->
+新文章列表 {Putnewblog}
+<!-- BEGIN RowsNewblog -->
+  <tr>
+    <td>
+    <a href="{url_reply}" class="cn"><img src="{templatesURL}/images/coolsee_arrow.gif" border="0" align="absmiddle">{newblogtitle}</a>
+    </td>
+  </tr>
+<!-- END RowsNewblog -->
+最新引用列表 {PutTrackback}
+<!-- BEGIN RowsTrackback -->
+  <tr>
+    <td>
+    <a href="{url_reply}" class="cn"><img src="{templatesURL}/images/coolsee_arrow.gif" border="0" align="absmiddle">{trackback}</a>
+    </td>
+  </tr>
+<!-- END RowsTrackback -->
+
+
+
+文章阅读相关:
+
+文章关键词显示 上级包装 可以省略 {PutBlogKeywords_f}
+<!-- BEGIN RowsKeywords_f -->
+<h4>{lang79}</h4>
+<div>{PutBlogKeywords}</div>
+<!-- END RowsKeywords_f -->
+文章关键词显示 内容 可直接使用 {PutBlogKeywords}
+<!-- BEGIN RowsKeywords -->
+  <li>
+  <div id="postedby">
+[=] {lang79}
+  </div>
+  <p>
+{blogKeyword},{sitekeyword}
+  </p>
+  <div id="replycon">
+
+  </div>
+  </li>
+<!-- END RowsKeywords -->
+
+评论显示 上级包装 可以省略 {PutBlogComments_f}
+<!-- BEGIN RowsReply_f -->
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+<a href="javascript:history.go(-1);" >[返回上一页]</a></td>
+</tr>
+</table>
+
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" height="23">
+  <tr>
+    <td bgcolor="B3E3FC">
+<b>↓该文章评论信息↓</b></td>
+        </tr>
+</table>
+
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FAFEF5">
+  <tr>
+    <td>
+{PutBlogComments}
+</td>
+        </tr>
+</table>
+
+<!-- END RowsReply_f -->
+评论显示 内容 可直接使用 {PutBlogComments}
+<!-- BEGIN RowsReply -->
+<table border="0" cellpadding="5" cellspacing="0" width="100%" style="WORD-BREAK: break-all; WORD-WRAP: break-word">
+<tr>
+    <td class="blogcontent"></td>
+</tr>
+<tr>
+	<td class="blogother" align="right">
+		评论者:<a href="mailto:{reEmail}" class="cn">{reAuthor}</a>
+		时间: {reAddtime} 
+		<a href="{homepage}" target="_blank"><img src="templates/coolsee/images/homepage.gif" width="15" height="12" border="0" align="absmiddle"></a>
+		<a href="http://search.tencent.com/cgi-bin/friend/user_show_info?ln={qq}" target="_blank"><img src="templates/coolsee/images/QQ.gif" width="15" height="12" border="0" align="absmiddle"></a>
+	</td>
+</tr>
+<tr>
+	<td height="1" bgcolor="#cccccc"></td>
+</tr>
+</table>
+<!-- END RowsReply -->
+
+引用显示 上级包装 可以省略 {PutBlogTrackbacks_f}
+<!-- BEGIN RowsTb_f -->
+<h4>{lang80} [{TrackbackNum}] :</h4>
+<ul id="comments">
+{PutBlogTrackbacks}
+</ul>
+<!-- END RowsTb_f -->
+引用显示 内容 可直接使用 {PutBlogTrackbacks}
+<!-- BEGIN RowsTb -->
+<table border="0" cellpadding="5" cellspacing="0" width="100%" style="WORD-BREAK: break-all; WORD-WRAP: break-word">
+<tr>
+    <td class="blogcontent">{tbtitle}<br />{tbexcerpt}</td>
+</tr>
+<tr>
+	<td class="blogother" align="right">
+{tbaddtime}
+ <a href="{tburl}"><img src="{templatesURL}/images/homepage.gif" align="absmiddle" title="{tbblog_name}" /></a>
+	</td>
+</tr>
+<tr>
+	<td height="1" bgcolor="#cccccc"></td>
+</tr>
+</table>
+<!-- END RowsTb -->
+
+回复表单 上级包装 可以省略 {PutCommentForm_f}
+<!-- BEGIN RowsReplayform_f -->
+{PutCommentForm}
+<!-- END RowsReplayform_f -->
+回复表单 内容 可直接使用 {PutCommentForm}
+<!-- BEGIN RowsReplayform -->
+<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr><td height="23" bgColor="#FFECB2"><b>↓发表评论↓</b></td>
+        </tr>
+</table>
+
+<form name="exEdit" method="post" action="{exPATH}/?play=reply&tag=true">
+
+              <table align="center" width="94%" border="0" cellpadding="0" cellspacing="2" bgcolor="#EAF2FF" class="main">
+                <tr>
+                  <td>
+
+{PutLogincom}
+</td>
+                </tr>
+                <tr>
+                  <td height="36" colspan="2"><div align="center">
+<textarea name="content" cols="50" rows="5" wrap="VIRTUAL"></textarea>
+<input type="hidden" name="do" value="add_replay" />
+<input type="submit" name="action" value="{lang91}" class="botton">
+
+                  </div></td>
+                </tr>
+              </table>
+          </form>
+
+<!-- END RowsReplayform -->
+
+<!-- BEGIN RownoLogincom -->
+<img src="{templatesURL}/images/nick.gif"> {lang84}
+<input name="name" type="text" id="author" size="20">
+
+<font color="#FF0000">*</font> {lang85} 
+<input name="password" type="password" size="15"> <br />
+
+<img src="{templatesURL}/images/mail.gif"> {lang86}
+<input name="email" type="text" size="20">
+<input type="checkbox" name="register" value="yes"> {lang87}<br />
+
+<img src="{templatesURL}/images/homepage.gif"> {lang88}
+<input name="homepage" type="text" size="30"> {lang89} <br />
+
+<img src="{templatesURL}/images/QQ.gif"> {lang90}
+<input name="qq" type="text" size="12"> <br />
+<!-- END RownoLogincom -->
+
+<!-- BEGIN RowLogincom -->
+<img src="{templatesURL}/images/nick.gif"> {lang84} <font color="#FF0000">{exBlogUserid}</font> {lang124}<br />
+<!-- END RowLogincom -->
+
+
+其他相关:
+
+搜索文章列表
+<!-- BEGIN RowsKeyword_f -->
+<table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+        {PutSearch}
+</table>
+<!-- END RowsKeyword_f -->
+<!-- BEGIN RowsKeyword -->
+<tr>
+    <td height="20">&nbsp;- <a href="{exPATH}/index.php?play=search&make=view&id={keyID}&key={keyword}" target="_blank">{keyTitle}</a></td>
+  <td> {visits} </td>
+<tr>
+<!-- END RowsKeyword -->
+友情链接页面列表
+<!-- BEGIN Rows2Links_f -->
+<table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+        {PutLinks2}
+</table>
+<!-- END Rows2Links_f -->
+<!-- BEGIN Rows2Links -->
+  <tr> 
+    <td width="25%" height="20">&nbsp;{homepage}</td>
+  <td width="30%"><a href="{exPATH}/index.php?play=links&amp;action=GoTo&amp;id={id}&amp;url={url}" title="{description}" target="_blank">{logoURL}</td>
+  <td width="45%"><a href="{exPATH}/index.php?play=links&amp;action=GoTo&amp;id={id}&amp;url={url}" title="{description}" target="_blank">{url}</a>&nbsp;&nbsp;[{visits}] </td>
+  </tr>
+<!-- END Rows2Links -->
+友情申请表单
+<!-- BEGIN RowsReglink -->
+<form method="post" action="{exPATH}/?play=regLink">
+  <table width="500" border="0" align="center" cellpadding="0" cellspacing="2">
+    <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td width="20%">&nbsp; {lang101}</td>
+    <td width="80%"> <input name="webTitle" type="text" size="40"> 
+      <font color="#FF0000">*</font> </td>
+  </tr>
+  <tr> 
+    <td>&nbsp; {lang102}</td>
+    <td><input name="webUrl" type="text" size="40"> <font color="#FF0000">*</font> 
+      {lang89} </td>
+  </tr>
+  <tr> 
+    <td>&nbsp; {lang103}</td>
+    <td><input name="webLogo" type="text" size="40">
+      {lang89} </td>
+  </tr>
+  <tr> 
+    <td valign="top">&nbsp; {lang104}</td>
+    <td><textarea name="webDescription" cols="60" rows="5" wrap="VIRTUAL"></textarea> 
+    </td>
+  </tr>
+  <tr> 
+    <td height="35" colspan="2">
+<div align="center"> 
+<input type="hidden" name="action" value="actreglink">
+        <input type="submit" value="{lang91}">
+      </div></td>
+  </tr>
+</table>
+</form>
+<!-- END RowsReglink -->
+

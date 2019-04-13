@@ -1,0 +1,30 @@
+.tt {
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+body {
+	background-color: #E6E6E6;
+	font-size: 12px; 
+	color: #333333;
+	scrollbar-face-color:#D5D5D5;
+	scrollbar-highlight-color:#C0C0C0;
+	scrollbar-Shadow-color:#C0C0C0;
+	scrollbar-3dlight-color:#E7E7E7;
+	scrollbar-darkshadow-color:#E7E7E7;
+	scrollbar-arrow-color:#3D3D3D;
+	scrollbar-track-color:#E0E0E0;
+}
+td {
+	font-size: 12px; 
+	color: #333333;
+}
+.down {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link       { color: #002828; text-decoration: none }
+a:visited    { color: #002828; text-decoration: none }
+a:hover      { color: #808080; text-decoration: none }
+
+input,textarea {
+	BORDER: #eeeeee 1px solid; }

@@ -1,0 +1,245 @@
+
+* {
+	FONT-FAMILY: georgia, verdana, arial, sans-serif; FONT-SIZE: 13px; LINE-HEIGHT: 17px;
+	COLOR: #000000; FONT-WEIGHT: normal;
+}
+
+body,html {
+	BACKGROUND: #666666; MARGIN: 0px; PADDING: 0px;
+}
+body {
+	TEXT-ALIGN: center;
+}
+
+img {
+	BORDER: 0px;
+}
+ul {
+	MARGIN-TOP: 5px
+}
+li,ol {
+	LIST-STYLE: none; MARGIN: 0px; PADDING: 0px
+}
+/* 链接 */
+a:link,a:visited {
+	COLOR: #55555; TEXT-DECORATION: none;
+}
+a:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: #ffffff;
+}
+
+/* =================================== */
+h1,h2,h3,h4,h5,h6,h7 {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold;
+}
+
+h1 {
+	BACKGROUND: #a0ac70; BORDER-BOTTOM: #666666 1px solid; COLOR: #fff; DISPLAY: block; FONT-SIZE: 22px; MARGIN: 0px -20px; PADDING: 25px 10px 20px 0px; TEXT-ALIGN: right;
+}
+h2 {
+	COLOR: #ffffff; FONT-SIZE: 14px; LINE-HEIGHT: 20px;
+}
+h3 {
+	COLOR: #000000; FONT-SIZE: 14px; PADDING: 1px 2px 1px 2px;
+}
+h3 a {
+	FONT-SIZE: 13px; FONT-WEIGHT: bold;
+}
+h3 a:link,h3 a:visited {
+	COLOR: #000000; FONT-SIZE: 14px; PADDING: 1px 2px;
+}
+h3.blogtitle {
+	COLOR: #555555; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 17px; FONT-WEIGHT: bold; LINE-HEIGHT: 22px; MARGIN-TOP: 10px; PADDING-LEFT: 20px;
+}
+h3.blogtitle a:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: #ffffff;
+}
+h3.blogtitle a:link,h3.blogtitle a:visited {
+	COLOR: #555555; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 17px; FONT-WEIGHT: bold;
+}
+h4 {
+	BACKGROUND: #f0d880 5px 5px; BORDER: 1px outset; COLOR: #000000; FONT-WEIGHT: normal; PADDING: 2px 0px 2px 20px;
+}
+#content {
+	BACKGROUND-COLOR: #e8cc58; BORDER: #000 1px outset; MARGIN: 20px auto; PADDING: 0px 20px 0px 20px; WIDTH: 750px; Z-INDEX: 1; TEXT-ALIGN: left;
+}
+#blogs {
+	BACKGROUND-COLOR: #ffffff; BORDER: 2px outset; COLOR: #000000; FLOAT: left; HEIGHT: 100%; MARGIN: 20px 0px; PADDING: 20px; WIDTH: 540px;TABLE-LAYOUT: fixed; WORD-WRAP: break-word;moz-border-radius: 15px;
+}
+#blogs h2 {
+	COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: bold; LINE-HEIGHT: 14px; MARGIN: 10px 0px 5px; PADDING: 4px 10px 4px 3px; TEXT-ALIGN: right;
+}
+#blogs hr {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: #666666 1px dotted; COLOR: #f0ece1;
+}
+#menu {
+	BACKGROUND-COLOR: #dcdcdc; BORDER: #555555 1px outset; COLOR: #000000; FLOAT: right; HEIGHT: 100%; MARGIN: 20px 0px; PADDING: 10px; TEXT-ALIGN: left; WIDTH: 150px;
+	FONT-FAMILY: "Trebuchet MS", arial, "sans serif"; FONT-SIZE: 11px;moz-border-radius: 15px;
+}
+#menu h2 {
+	BORDER: #eaeaea 1px inset; COLOR: #555555; FONT-SIZE: 12px; FONT-WEIGHT: bold; LINE-HEIGHT: 16px; MARGIN: 10px 0px 5px; PADDING: 2px 0px; TEXT-ALIGN: center;
+}
+#menu hr {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: #666666 1px dotted; COLOR: #e3dbc6;
+}
+#navigation {
+	BORDER-TOP: #d4c9aa 1px solid; COLOR: #000000; MARGIN-TOP: 20px; PADDING: 5px 10px; TEXT-ALIGN: right; FONT-SIZE: 11px;
+}
+.pagenum a {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 4em; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none; FONT-SIZE: 11px;
+}
+.pagenum a:hover {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #666666 1px solid; WIDTH: 4em; COLOR: #ffffff; PADDING-TOP: 1px; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #ffcc00; TEXT-DECORATION: none; FONT-SIZE: 11px;
+}
+.gong {
+	BORDER: #dfdfdf 1px outset;
+}
+.gong a:link,.gong a:visited {
+	BACKGROUND: #d4d4d4; COLOR: #666666; DISPLAY: block; LINE-HEIGHT: 16px; PADDING: 1px 0px 1px 10px; TEXT-ALIGN: left;
+}
+.gong a.active:link,.gong a.active:visited {
+	BACKGROUND: #f4f4f4; COLOR: #666666; FONT-SIZE: 13px;
+}
+.gong a:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: #ffffff;
+}
+.gong a.active:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: yellow;
+}
+
+.blogbody {
+	COLOR: #000; TEXT-ALIGN: justify;
+	FONT-SIZE: 14px; LINE-HEIGHT: 19px;
+}
+.blogbody a:link,.blogbody a:visited {
+	COLOR: #2e768d; PADDING: 0px 2px; TEXT-DECORATION: underline;
+}
+.blogbody a:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: #ffffff;
+}
+.blogbody p,.blogbody li,.blogbody ul,.blogbody input {
+	MARGIN-BOTTOM: 5px;
+}
+.blogbody ul li {
+	MARGIN-LEFT: 0px
+}
+
+.bloginfo {
+	COLOR: #000000; FONT-SIZE: 11px; MARGIN: 20px 0px; TEXT-ALIGN: right;
+}
+.bloginfo a,.bloginfo a:link,.bloginfo a:visited {
+	FONT-SIZE: 11px;
+}
+.bloginfo a:hover {
+	COLOR: #ffffff;
+}
+fieldset {
+	BORDER-STYLE: groove; MARGIN: 5px 0px; PADDING: 5px;moz-border-radius: 10px;
+}
+legend {
+	COLOR: #223649; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; PADDING-RIGHT: 10px;
+}
+#menu ul {
+	MARGIN: 5px 0px 5px 20px; PADDING: 0px;
+}
+#menu li {
+	MARGIN: 3px 0px; PADDING: 0px;
+}
+#footer {
+	BACKGROUND-COLOR: #f0d880; BORDER-TOP: #000 1px solid; CLEAR: both; FONT-SIZE: 11px; MARGIN: 10px -20px 0px; PADDINGTOP: 2px 0px; POSITION: relative; TEXT-ALIGN: center
+}
+#footer a {
+	FONT-SIZE: 12px
+}
+
+#postedby {
+	BACKGROUND: #cccccc; BORDER: #dfdfdf 1px ridge; COLOR: #f1f8fa; FONT-STYLE: normal; HEIGHT: 17px; MARGIN: 10px 0px 0px; PADDING: 1px 10px 2px 20px;
+}
+#postedby A:link, #postedby A:visited {
+	COLOR: #ffffff; FONT-WEIGHT: bold
+}
+#replycon {
+	BACKGROUND-COLOR: transparent; BORDER-BOTTOM: #dfdfdf 1px solid; COLOR: #000000; DISPLAY: block; FONT-SIZE: 10px; FONT-WEIGHT: bold; HEIGHT: 17px; MARGIN-BOTTOM: 20px; PADDING: 1px 5px 0px 0px; TEXT-ALIGN: right; TEXT-DECORATION: none;
+}
+comments p {
+	BACKGROUND-COLOR: #eaeaea; FONT-SIZE: 13px; LINE-HEIGHT: 18px; MARGIN: 5px 0px; PADDING: 5px 10px;
+}
+comments p a:link {
+	TEXT-DECORATION: underline;
+}
+
+#topindex {
+	BACKGROUND: white; BORDER-BOTTOM: #666666 1px solid; CLEAR: both; HEIGHT: 25px; MARGIN: 0px -20px;
+}
+#top {
+	MARGIN: 0px auto; PADDING: 0px; WIDTH: 705px;
+}
+#top UL {
+	BORDER: 0px; DISPLAY: inline; LIST-STYLE: none; MARGIN: 0px; PADDING: 0px;
+}
+#top LI {
+	BORDER: 0px; DISPLAY: inline; LIST-STYLE: none; MARGIN: 0px; PADDING: 0px;
+}
+#top A {
+	TEXT-ALIGN: center; WIDTH: 140px
+}
+#top A:link,#top A:visited {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: 0px; BORDER-LEFT: #666666 1px solid; BORDER-RIGHT: 0px; BORDER-TOP: 0px; COLOR: #000; FLOAT: left; FONT-SIZE: 13px; HEIGHT: 15px; LINE-HEIGHT: 13px; MARGIN: 0px; PADDING: 5px 10px; TEXT-DECORATION: none;
+}
+#top A:hover {
+	BACKGROUND-COLOR: #c896aa; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+
+input,textarea {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #eeeeee 1px solid
+}
+
+botton{
+	BORDER: #c0c0c0 1px solid;
+}
+.list, .oneblog, .oneannounce{
+	WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed;
+}
+
+#weekcell	{background-color:#f6f6f6;}
+.style1		{color: #FF0000}
+.calfooter	{background-color:#f6f6f6;}
+
+/*calender style*/
+#calendar {
+background-color:#ffffff; border-color:#111111; filter:alpha(opacity=90); position:absolute; right:20px;
+}
+#caltitle {
+padding-top:10px;padding-bottom:5px;font-weight:bold;text-align:left;
+}
+#weekcell {
+padding-top:2px;font-weight:bold;
+}
+.daycell{
+	padding:2px;
+	background-color:#FEFEFE;
+}
+.todaycell{
+	padding:2px;
+	color:#FF5024;
+	background-color:#c0c0c0;
+	border-color:#000000;
+	font-weight:bold;
+}
+.calfooter{padding-top:2px;font-weight:bold;}
+
+.list {
+	WORD-BREAK: break-all; WORD-WRAP: break-word; table-layout:fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+

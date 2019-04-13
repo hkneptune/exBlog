@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta Name="author" content="elliott,Hunter">
+<meta name="keywords" content="elliott,hunter,exBlog,blog,PHP,MySQL">
+<meta name="description" content="exBlog - Powered by elliott,Designed by Hunter">
+<meta name="MSSmartTagsPreventParsing" content="TRUE">
+<meta http-equiv="MSThemeCompatible" content="Yes">
+<title>{title}-绿色裸丽版  显示公告</title>
+<script language="JavaScript" type="text/javascript" src="include/ex1.js"></script>
+</head>
+<body>
+<p align="center">&nbsp;</p>
+<p align="center"><img src="{templatesURL}/images/notice.gif" width="100" height="20"></p>
+<link href="{templatesURL}/style/styles.css" rel="stylesheet" type="text/css">
+<table width="450" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="WORD-BREAK: break-all; WORD-WRAP: break-word">
+  <tr>
+    <td background="{templatesURL}/images/coolsee_table_back.gif" height="25">&nbsp;&nbsp;<b>{announceTitle}</b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><br>&nbsp;&nbsp;{announceContent}
+    <br><br>
+	</td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="#F1F1F1">发布者: <a href="mailto:{announceEmail}" class="cn">{announceAuthor}</a> 
+      时间:{announceAddtime}</td>
+  </tr>
+</table>
+<table width="450" border="0" align="center" cellpadding="0" cellspacing="10">
+  <tr> 
+    <td align="center"><input name="button" type=button class="botton" onclick=window.close() value="关闭窗口"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
